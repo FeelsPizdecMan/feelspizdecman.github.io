@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ЖК</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("user_VLIwyDBySOvDm4b915mRH");
+            })();
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="topbar">
+            <h1>Апекс Грант</h1>
+            <button class="calltopbar"> Заказать Звонок </button>
+        </div>
+
+        <div class="topnav">
+            <a href="">О Комплексе</a>
+            <a href="">Особенности</a>
+            <a href="">Преимущества</a>
+            <a href="">Запись</a>
+            <a href="">Планировка</a>
+            <a href="">Ипотека</a>
+            <a href="">Галерея</a>
+            <a href="">Карта</a>    
+        </div>
+
+
+        <form id="regForm" class="gform" method="POST" data-email="loke0720@gmail.com"
+        action="https://script.google.com/macros/s/AKfycbyxRMf_KzuzraW4DBOqwditwv0JEQEOJ73pV_Ytqw/exec">
+
+            <h2>Запись</h2>
+            
+            <div class="tab">Name:
+                <fieldset class="">
+                    <input id="name" name="name" placeholder="What your Mom calls you" />
+                </fieldset>
+            </div>
+            
+            <div class="tab">Contact Info:
+                <fieldset class="">
+                    <textarea id="message" name="message" rows="10"
+                    placeholder="Tell us what's on your mind..."></textarea>
+                </fieldset>
+            </div>
+            
+            <div class="tab">Birthday:
+                <fieldset class="">
+                    <input id="email" name="email" type="email" value=""
+                    required placeholder="your.name@email.com"/>
+                </fieldset>
+            </div>
+            
+            <div class="tab">Login Info:
+                <fieldset class="">
+                    <input id="color" name="color" placeholder="green" />
+                </fieldset>            
+            </div>
+            
+            <div style="overflow:auto;">
+              <div style="float:left;" class="pnbuttons">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Назад</button>
+                <button type="button" id="prevBtn" onclick="nextPrev(1)">вперед</button>
+              </div>
+            </div>
+
+
+            <div class="thankyou_message" style="display:none;">
+                <h2><em>Спасибо!</em>
+                  Мы скоро свяжемся с вами!</h2>
+              </div>
+            
+            <div style="text-align:center;margin-top:40px; display: none;">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+            
+        </form>
+
+
+<!--
+    <form class="gform" method="POST" data-email="loke0720@gmail.com"
+  action="https://script.google.com/macros/s/AKfycbyxRMf_KzuzraW4DBOqwditwv0JEQEOJ73pV_Ytqw/exec">
+
+
+    <div class="form-elements">
+      <fieldset class="">
+        <label for="name">Name: </label>
+        <input id="name" name="name" placeholder="What your Mom calls you" />
+      </fieldset>
+
+      <fieldset class="">
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="Tell us what's on your mind..."></textarea>
+      </fieldset>
+
+      <fieldset class="">
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+      </fieldset>
+
+      <fieldset class="">
+        <label for="color">Favourite Color: </label>
+        <input id="color" name="color" placeholder="green" />
+      </fieldset>
+
+      <fieldset class=" honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Спасибо!</em>
+        Мы скоро свяжемся с вами!</h2>
+    </div>
+
+  </form>
+
+-->
+        
+
+
+        
+
+
+
+
+
+
+        <div class="about1">
+            <div class="about__text">
+                <h2>Жилой Комлпекс <br> Апекс Грант</h2>
+
+                <p>Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития. Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                    Не следует, однако забывать, что дальнейшее развитие различных форм деятельности способствует подготовки и реализации форм развития. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="about2">
+            <div class="about2-1"> 
+
+                <span> <small>Корпуса</small> <br> 6 Корпусов </span>
+            </div>
+            <div class="about2-1"> 
+
+                <span> <small>Этажность</small> <br>11-20 </span>
+            </div>
+            <div class="about2-1"> 
+
+                <span> <small>Высота Потолков</small> <br> 3.0 - 3.6 м </span>
+            </div>
+            <div class="about2-1"> 
+
+                <span> <small>Цена</small> <br> от 4.1 млн ₽ </span>
+            </div>
+        </div>
+
+
+        <div class="special">
+            <div class="special_image">
+
+            </div>
+
+            <div class="special_text">
+
+                <h2>Преимущества</h2>
+
+                <p>
+                    Находясь в самом сердце столицы дом «Соты» обладает уникальными видами на исторический и деловой центр города. Через панорамные окна вы каждый день сможете наслаждаться видами улицы Цюрупы — одной из самых главных улиц «старого города», восхищаться видами нового «Муслим-сити» или любоваться речными видами Белой и Забелья. Несмотря на быстрый ритм делового центра ваша квартира всегда будет оставаться островком покоя и умиротворения благодаря высокотехнологичным стеклопакетам с повышенной шумоизоляцией. Светоотражающее напыление летом не позволит активным солнечным лучам перегревать ваше жилое пространство, а зимой наоборот сохранит тепло внутри квартиры.
+                </p>
+            </div>
+        </div>
+
+        <div class="special2">
+            <div class="special2-1">
+                <h2>Безопасность Семьи</h2>
+
+                <p>
+                    Для безопасности вашей семьи в клубном доме «Соты» предусмотрено круглосуточное видеонаблюдение, служба консьержей, охранная сигнализация и система дымоудаления. Также для вашего удобства мы предусмотрели прямой доступ к подземному, отапливаемому, 3-уровневому паркингу, спуститься на который можно на скоростном лифте прямо с жилого этажа.
+                </p>
+            </div>
+
+            <div class="special2-1">
+                <h2>Архитектурная Доминанта</h2>
+
+                <p >
+                    Ключевая идея дизайна ― панорамное остекление фасада в форме правильных шестиугольников, гексагонов. Гексагон ― символ изобилия, красоты, гармонии, свободы, любви, удовольствия, покоя и целостности. Это пифагорейский образ жизни и благой судьбы. Ну и, разумеется, правильные шестиугольники призваны напоминать пчелиные соты. Ведь мёд ― классический символ республики.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="special2">
+            <div class="special2-1">
+                <h2>Безопасность Семьи</h2>
+
+                <p>
+                    Для безопасности вашей семьи в клубном доме «Соты» предусмотрено круглосуточное видеонаблюдение, служба консьержей, охранная сигнализация и система дымоудаления. Также для вашего удобства мы предусмотрели прямой доступ к подземному, отапливаемому, 3-уровневому паркингу, спуститься на который можно на скоростном лифте прямо с жилого этажа.
+                </p>
+            </div>
+
+            <div class="special2-1">
+                <h2>Архитектурная Доминанта</h2>
+
+                <p >
+                    Ключевая идея дизайна ― панорамное остекление фасада в форме правильных шестиугольников, гексагонов. Гексагон ― символ изобилия, красоты, гармонии, свободы, любви, удовольствия, покоя и целостности. Это пифагорейский образ жизни и благой судьбы. Ну и, разумеется, правильные шестиугольники призваны напоминать пчелиные соты. Ведь мёд ― классический символ республики.
+                </p>
+            </div>
+        </div>
+
+        
+        <div class="infrastr">
+            <div class="infrastr-card">
+                <div class="card-img">
+                    <img src="img/bg1.jpg" alt="">
+                </div>
+
+                <div class="card-text">
+                    Высокая строительная готовность
+                </div>
+            </div>
+
+            <div class="infrastr-card">
+                <div class="card-img">
+                    <img src="img/bg1.jpg" alt="" >
+                </div>
+
+                <div class="card-text">
+                    Действующая школа и детский сад во дворе
+                </div>
+            </div>
+            
+            <div class="infrastr-card">
+                <div class="card-img">
+                    <img src="img/bg1.jpg" alt="" >
+                </div>
+
+                <div class="card-text">
+                    Отличная транспортная доступность
+                </div>
+            </div>
+
+            <div class="infrastr-card">
+                <div class="card-img">
+                    <img src="img/bg1.jpg" alt="" >
+                </div>
+
+                <div class="card-text">
+                    Готовый для жизни квартрал
+                </div>
+            </div>
+
+            <div class="infrastr-card">
+                <div class="card-img">
+                    <img src="img/bg1.jpg" alt="" >
+                </div>
+
+                <div class="card-text">
+                    Паркинги и кладовые
+                </div>
+            </div>
+
+            <div class="infrastr-card">
+                <div class="card-img">
+                    <img src="img/bg1.jpg" alt="" >
+                </div>
+
+                <div class="card-text">
+                    Современная архитектура
+                </div>
+            </div>
+
+            <div class="infrastr-card">
+                <div class="card-img">
+                    <img src="img/bg1.jpg" alt="">
+                </div>
+
+                <div class="card-text">
+                    Входные Группы индивидуального дизайна
+                </div>
+            </div>
+
+            <div class="infrastr-card">
+                <div class="card-img">
+                    <img src="img/bg1.jpg" alt="">
+                </div>
+
+                <div class="card-text">
+                    Благоустроенная территория квартала
+                </div>
+            </div>
+
+            <div class="infrastr-card">
+                <div class="card-img">
+                    <img src="img/bg1.jpg" alt="">
+                </div>
+
+                <div class="card-text">
+                    Прекрасная Экология
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="plan">
+            <h2>Планировки</h2>
+
+            <div class="plan-grid">
+
+                <div class="grid-1">
+                    <img src="img/p1.png" alt="">
+                    <h3>    1-Комнатные <br> <small>11 Вариантов</small>   </h3>
+
+                    <h4>от 13 500 000₽</h4>
+                    <button>Планировкии и Цены</button>
+                </div>
+                <div class="grid-1">
+                    <img src="img/p2.png" alt="">
+                    <h3>    2-Комнатные <br> <small>25 Вариантов</small>   </h3>
+
+                    <h4>от 20 300 000₽</h4>
+                    <button>Планировкии и Цены</button>
+                </div>
+                <div class="grid-1">
+                    <img src="img/p3.png" alt="">
+                    <h3>    3-Комнатные <br> <small>31 Вариантов</small>   </h3>
+
+                    <h4>от 30 200 000₽</h4>
+                    <button>Планировкии и Цены</button>
+                </div>
+                <div class="grid-1">
+                    <img src="img/p4.png" alt="">
+                    <h3>    4-Комнатные <br> <small>17 Вариантов</small>   </h3>
+
+                    <h4>от 40 100 000₽</h4>
+                    <button>Планировкии и Цены</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="gallery-video">
+        <div class="gallery-video-menu">
+
+            <div class="menuLine">
+                <div id="subScription" class="menu active">Галерея</div>
+                <div id="inStore" class="menu">Видео</div>
+            </div>
+
+        </div>   
+            <!-- SPLIDE -->
+
+        <div id="firstBlock" class="middleBlock">
+            <div class="firstBlockContent leftblock">
+
+                <div class="splide" data-splide='{"rewind":true,"focus":"center","speed":1000,"perMove":1,"focus"=0}'>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img src="img/bg1.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="img/bg1.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="img/bg1.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="img/bg1.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="img/bg1.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="img/bg1.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="img/bg1.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="img/bg1.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="img/bg1.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="img/bg1.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="img/bg1.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="img/bg1.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="secondBlock" class="middleBlock">
+            <div class="secondBlockContent leftblock">
+                <iframe src="https://www.youtube-nocookie.com/embed/S8JBXrLDkGs?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        <!-- splide script -->
+                <script>
+                    new Splide( '.splide' ).mount();
+                </script>
+
+                <script>
+                    document.addEventListener( 'DOMContentLoaded', function () {
+                        new Splide( '.splide' ).mount();
+                    } );
+                </script>
+                
+                <script src="js/splide.min.js"></script>
+
+        <!-- End of Splide Script-->
+
+
+        <!-- END OF SPLIDE-->
+    </div>
+
+        <div class="calc">
+
+            <h2>Ипотечный Калькулятор</h2>
+
+            <iframe id="calcus-iframe-ipoteka" width="100%" height="500" frameborder="0" style="width:1px; min-width: 100%;" scrolling="no" src="https://calcus.ru/kalkulyator-ipoteki?embed=1&bgcolor=%23ffd034&buttoncolor=%23111111&type=1&start_sum_type=1"></iframe>
+            <script>
+                window.addEventListener('message', function(event) {
+                    if (height_ipoteka = event.data['height_ipoteka']) {
+                        document.getElementById('calcus-iframe-ipoteka').style.height = height_ipoteka + 'px'
+                    }
+                })
+            </script>
+        </div>
+
+
+        <div class="map">
+            <h2>Карта</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158217.85882822846!2d36.04205083782386!3d51.711924218294754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412f0375da12791b%3A0x9788ae489cd5e746!2z0JrRg9GA0YHQuiwg0JrRg9GA0YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1598242523680!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        </div>
+        
+
+
+
+    <script src="js/main.js" async defer></script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+    </body>
+</html>
