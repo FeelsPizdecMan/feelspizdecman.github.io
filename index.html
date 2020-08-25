@@ -31,18 +31,89 @@
         </div>
 
         <div class="topnav">
-            <a href="">О Комплексе</a>
-            <a href="">Особенности</a>
-            <a href="">Преимущества</a>
-            <a href="">Запись</a>
-            <a href="">Планировка</a>
-            <a href="">Ипотека</a>
-            <a href="">Галерея</a>
-            <a href="">Карта</a>    
+            <a href="#about">О Комплексе</a>
+            <a href="#special">Преимущества</a>
+            <a href="#infra">Инфраструктура</a>
+            <a href="#regForm">Запись</a>
+            <a href="#plan">Планировка</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#calc">Ипотека</a>
+            <a href="#map">Карта</a>    
         </div>
 
 
-        <div class="about1">
+        
+        
+
+<!--
+    <form class="gform" method="POST" data-email="loke0720@gmail.com"
+  action="https://script.google.com/macros/s/AKfycbyxRMf_KzuzraW4DBOqwditwv0JEQEOJ73pV_Ytqw/exec">
+
+
+    <div class="form-elements">
+      <fieldset class="">
+        <input id="name" name="name" placeholder="What your Mom calls you" />
+      </fieldset>
+
+      <fieldset class="">
+        <textarea id="message" name="message"
+        placeholder="Tell us what's on your mind..."></textarea>
+      </fieldset>
+
+      <fieldset class="">
+
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+      </fieldset>
+
+      <fieldset class="">
+
+        <input id="color" name="color" placeholder="green" />
+      </fieldset>
+
+      <fieldset class="">
+
+        <input id="tan" name="имя" placeholder="green" />
+      </fieldset>
+
+      <fieldset class="">
+
+        <input id="blue" name="возмонд" placeholder="green" />
+      </fieldset>
+
+      <fieldset class="">
+
+        <input id="nice" name="да" placeholder="green" />
+      </fieldset>
+
+      <fieldset class=" honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </div>
+
+
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Спасибо!</em>
+        Мы скоро свяжемся с вами!</h2>
+    </div>
+
+  </form>
+
+-->        
+
+
+        
+
+
+
+
+
+
+        <div class="about1" id="about">
             <div class="about__text">
                 <h2>Жилой Комлпекс <br> Апекс Грант</h2>
 
@@ -73,7 +144,7 @@
         </div>
 
 
-        <div class="special">
+        <div class="special" id="special">
             <div class="special_image">
 
             </div>
@@ -88,7 +159,7 @@
             </div>
         </div>
 
-        <div class="special2">
+        <div class="special2" id="about2">
             <div class="special2-1">
                 <h2>Безопасность Семьи</h2>
 
@@ -126,7 +197,7 @@
         </div>
 
         
-        <div class="infrastr">
+        <div class="infrastr" id="infra">
             <div class="infrastr-card">
                 <div class="card-img">
                     <img src="img/bg1.jpg" alt="">
@@ -222,13 +293,182 @@
 
 
 
-        <div class="plan">
+
+        <form id="regForm" class="gform" method="POST" data-email="loke0720@gmail.com"
+        action="https://script.google.com/macros/s/AKfycbxrAl0MUK25sYSx6bAV2Q8IBXtdMG7sjV4NRZzESWShsc0CiRol/exec">
+        
+        <h2>Запись</h2>
+        
+        <div class="form-elements">
+            
+            
+            <div class="tab"> <h2>Выберите этаж</h2>
+
+                        <fieldset class="pure-group">
+                            <label for="checkboxes--nizkiy" class="container">Низкий
+                                <input id="checkboxes--nizkiy" type="checkbox" name="Этажность" value="Низкий"  >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label for="checkboxes--sredniy" class="container">Средний
+                                <input id="checkboxes--sredniy" type="checkbox" name="Этажность" value="Средний"  >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label for="checkboxes--visokiy" class="container">Высокий
+                                <input id="checkboxes--visokiy" type="checkbox" name="Этажность" value="Высокий"  >
+                                <span class="checkmark"></span>
+                            </label>
+                          </fieldset>
+
+
+            </div>
+
+
+            <div class="tab"><h2>Количество комнат</h2> 
+                
+                <fieldset class="pure-group">
+                    <label for="checkboxes--studio" class="container">1-Студия
+                        <input id="checkboxes--studio" type="checkbox" name="Кол-во Комнат" value="1-Студия"  >
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="checkboxes--twoap" class="container">2-Комнатная
+                        <input id="checkboxes--twoap" type="checkbox" name="Кол-во Комнат" value="2-Комнатная"  >
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="checkboxes--threeapp" class="container">3-Комнатная
+                        <input id="checkboxes--threeapp" type="checkbox" name="Кол-во Комнат" value="3-Комнатная"  >
+                        <span class="checkmark"></span>
+                    </label>
+                 </fieldset>
+
+            </div>
+            
+            <div class="tab"><h2>Наличие Балкона</h2> 
+
+                <fieldset class="pure-group">
+                    <label for="checkboxes--yesbal" class="container">Да
+                        <input id="checkboxes--yesbal" type="checkbox" name="Балкон" value="Да"  >
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="checkboxes--nobal" class="container">Нет
+                        <input id="checkboxes--nobal" type="checkbox" name="Балкон" value="Нет"  >
+                        <span class="checkmark"></span>
+                    </label>
+                 </fieldset>
+
+            </div>
+            <div class="tab"><h2>Предполагаемая сумма</h2>
+
+                <fieldset class="pure-group">
+                    <label for="checkboxes--sumlow" class="container">до 5 млн
+                        <input id="checkboxes--sumlow" type="checkbox" name="Сумма" value="до 5 млн"  >
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="checkboxes--summid" class="container">5-7 млн
+                        <input id="checkboxes--summid" type="checkbox" name="Сумма" value="5-7 млн"  >
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="checkboxes--sumhigh" class="container">больше 7 млн
+                        <input id="checkboxes--sumhigh" type="checkbox" name="Сумма" value="больше 7 млн"  >
+                        <span class="checkmark"></span>
+                    </label>
+                 </fieldset>
+
+            </div>
+
+            <div class="tab"><h2>Когда Вас записать на просмотр?</h2>
+
+               <fieldset class="pure-group">
+                    <label for="checkboxes--tommorrow" class="container">Завтра
+                        <input id="checkboxes--tommorrow" type="checkbox" name="Время Записи" value="Завтра"  >
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="checkboxes--week" class="container">Через Неделю
+                        <input id="checkboxes--week" type="checkbox" name="Время Записи" value="Через Неделю"  >
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="checkboxes--month" class="container">Через Месяц
+                        <input id="checkboxes--month" type="checkbox" name="Время Записи" value="Через Месяц"  >
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="checkboxes--idk" class="container">Не Определился
+                        <input id="checkboxes--idk" type="checkbox" name="Время Записи" value="Не определился"  >
+                        <span class="checkmark"></span>
+                    </label>
+                 </fieldset>
+
+            </div>
+
+
+            <div class="tab"><h2>Способ Оплаты</h2>
+
+                <fieldset class="pure-group">
+                    <label for="checkboxes--ipot" class="container">Ипотека
+                        <input id="checkboxes--ipot" type="checkbox" name="Способ Оплаты" value="Ипотека"  >
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="checkboxes--cash" class="container">Наличные
+                        <input id="checkboxes--cash" type="checkbox" name="Способ Оплаты" value="Наличные"  >
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="checkboxes--rasr" class="container">Рассрочка
+                        <input id="checkboxes--rasr" type="checkbox" name="Способ Оплаты" value="Рассрочка"  >
+                        <span class="checkmark"></span>
+                    </label>
+                 </fieldset>
+
+            </div>
+
+            <div class="tab"><h2>Номер Телеофна</h2> 
+                <fieldset class="pure-group">
+                    <input id="phone--phone" name="Номер Телефона" required placeholder="8(999)999-99-99" />
+                </fieldset>      
+            </div>
+
+            <div style="overflow:auto;">
+                <div style="float:left;" class="pnbuttons">
+                  <button type="button" id="prevBtn" onclick="nextPrev(-1)">Назад</button>
+                  <button type="button" id="nextBtn" onclick="nextPrev(1)">Вперед</button>
+                  <button id="sendbutton"" style="display: none;" class="button-success pure-button button-xlarge">
+                      <i class="fa fa-paper-plane"></i>&nbsp;Отправить</button>
+                </div>
+              </div>
+        </div>
+
+        <div class="thankyou_message" style="display:none;">
+                <h2><em>Спасибо!</em>
+                  Мы скоро свяжемся с вами!</h2>
+        </div>
+
+           
+
+            
+           
+
+
+           
+            
+            <div style="text-align:center;margin-top:40px; display: none;">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+
+            </div>
+            
+        </form>
+
+
+
+        <div class="plan" id="plan">
             <h2>Планировки</h2>
 
             <div class="plan-grid">
 
                 <div class="grid-1">
-                    <img src="img/p4.png" alt="">
+                    <img src="img/p1.png" alt="">
                     <h3>    1-Комнатные <br> <small>11 Вариантов</small>   </h3>
 
                     <h4>от 13 500 000₽</h4>
@@ -259,7 +499,7 @@
             </div>
         </div>
 
-        <div class="gallery-video">
+        <div class="gallery-video" id="gallery">
         <div class="gallery-video-menu">
 
             <div class="menuLine">
@@ -319,7 +559,7 @@
         <!-- END OF SPLIDE-->
     </div>
 
-        <div class="calc">
+        <div class="calc" id="calc">
 
             <h2>Ипотечный Калькулятор</h2>
 
@@ -334,7 +574,7 @@
         </div>
 
 
-        <div class="map">
+        <div class="map" id="map">
             <h2>Карта</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158217.85882822846!2d36.04205083782386!3d51.711924218294754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412f0375da12791b%3A0x9788ae489cd5e746!2z0JrRg9GA0YHQuiwg0JrRg9GA0YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1598242523680!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        </div>
         

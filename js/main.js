@@ -33,9 +33,11 @@ var display = function(block_name, title) {
       document.getElementById("prevBtn").style.display = "inline";
     }
     if (n == (x.length - 1)) {
-      document.getElementById("nextBtn").innerHTML = "Отправить";
+      document.getElementById("nextBtn").style.display = "none";
+      document.getElementById("sendbutton").style.display = "inline";
     } else {
-      document.getElementById("nextBtn").innerHTML = "Дальше";
+      document.getElementById("nextBtn").style.display = "inline";
+      document.getElementById("sendbutton").style.display = "none";
     }
     // ... and run a function that displays the correct step indicator:
     fixStepIndicator(n)
@@ -81,6 +83,8 @@ var display = function(block_name, title) {
     }
     return valid; // return the valid status
   }
+  
+
   
   function fixStepIndicator(n) {
     // This function removes the "active" class of all steps...
