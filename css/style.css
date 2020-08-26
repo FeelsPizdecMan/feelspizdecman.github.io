@@ -94,7 +94,30 @@ body button:hover{
 }
 
 ::-webkit-scrollbar{
-    width: 0;
+    height: 0px;
+    width: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    ::-webkit-scrollbar{
+        height: 0;
+        width: 0;
+    }
+}
+
+
+::-webkit-scrollbar-track {
+    background:transparent; 
+  }
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ffd034; 
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
 
 .topnav a{
@@ -116,9 +139,19 @@ body button:hover{
     font-weight: 900 !important;
 }
 
+.topnavcall:hover{
+    cursor: pointer;
+}
+
+
+
 @media screen and (max-width: 600px) {
     .topnav{
         padding-top: 10px;
+    }
+
+    .topnavcall{
+        display: none;
     }
 }
 
@@ -302,13 +335,21 @@ body button:hover{
     }
 }
 
+.infrastrh2{
+    margin: 0 5%;
+    font-weight: 900;
+    color: #ffd034;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 
 .infrastr{
     display: flex;
     justify-content: space-between;
     margin: 0 5%;
     overflow-x: auto;
-    margin-top: 4rem;
 }
 
 .infrastr-card{
@@ -455,6 +496,8 @@ body button:hover{
     border: none;
     margin: 0 !important;
 }
+
+
 
 
 .grid-form input{
@@ -738,3 +781,55 @@ body button:hover{
     padding: 1rem 2rem;
 }
 
+
+
+.popupphone{
+    position: fixed;
+    text-align: center;
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.popupphonediv{
+    background-color: #111111f5;
+    width: 50%;
+    margin: 0 25%;
+    border-radius: 15px;
+    padding: 4rem 1rem;
+    padding-top: -5rem;
+}
+
+.popupphonediv h2{
+    color: #ffd034;
+    font-weight: 900;
+}
+
+.popupphonediv input{
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 2rem;
+    border-bottom: 3px solid #ffd034;
+}
+
+.popupphonediv input:focus{
+    outline: none;
+}
+
+.popupphonediv button{
+    background-color: #ffffff;
+}
+
+
+#sendbuttont{
+    font-weight: 900;
+    font-size: 3rem;
+    color: #111111;
+    background-color: #ffd034;
+    border: none;
+    padding: 0.5rem 1rem;
+}

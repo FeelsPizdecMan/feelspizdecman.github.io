@@ -33,83 +33,33 @@
         <div class="topnav">
             <a href="#about">О Комплексе</a>
             <a href="#special">Преимущества</a>
-            <a href="#infra">Инфраструктура</a>
+            <a href="#infras">Инфраструктура</a>
             <a href="#regForm">Квиз</a>
             <a href="#plan">Планировка</a>
             <a href="#gallery">Галерея</a>
             <a href="#calc">Ипотека</a>
             <a href="#map">Карта</a>
-            <a href="tel:89999999999" class="topnavcall">Позвонить</a>
+            <a class="topnavcall" onclick="$('#popupphone').toggle();">Позвонить</a>
         </div>
 
 
         
+        <div class="popupphone" id="popupphone">
+            <div class="popupphonediv">
+                <form id="regForm" class="gform gform2" method="POST" data-email="loke0720@gmail.com"
+                action="https://script.google.com/macros/s/AKfycbxrAl0MUK25sYSx6bAV2Q8IBXtdMG7sjV4NRZzESWShsc0CiRol/exec">
+                <h2>Введите Номер</h2>
+                <br>
+                <fieldset class="popupphoneinput">
+                    <input id="phone--phone" type="tel" name="phone"  name="Номер Телефона"  minlength="11" maxlength="11"  required placeholder="89999999999" />
+                </fieldset>      
+                <br>
+                <button id="sendbuttont" onclick="$('#popupphone').toggle();" name="redirect" onClick="redirect()">&nbsp;Отправить</button>
+
+            </form>
+            </div>
+        </div>
         
-
-<!--
-    <form class="gform" method="POST" data-email="loke0720@gmail.com"
-  action="https://script.google.com/macros/s/AKfycbyxRMf_KzuzraW4DBOqwditwv0JEQEOJ73pV_Ytqw/exec">
-
-
-    <div class="form-elements">
-      <fieldset class="">
-        <input id="name" name="name" placeholder="What your Mom calls you" />
-      </fieldset>
-
-      <fieldset class="">
-        <textarea id="message" name="message"
-        placeholder="Tell us what's on your mind..."></textarea>
-      </fieldset>
-
-      <fieldset class="">
-
-        <input id="email" name="email" type="email" value=""
-        required placeholder="your.name@email.com"/>
-      </fieldset>
-
-      <fieldset class="">
-
-        <input id="color" name="color" placeholder="green" />
-      </fieldset>
-
-      <fieldset class="">
-
-        <input id="tan" name="имя" placeholder="green" />
-      </fieldset>
-
-      <fieldset class="">
-
-        <input id="blue" name="возмонд" placeholder="green" />
-      </fieldset>
-
-      <fieldset class="">
-
-        <input id="nice" name="да" placeholder="green" />
-      </fieldset>
-
-      <fieldset class=" honeypot-field">
-        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
-        <input id="honeypot" type="text" name="honeypot" value="" />
-      </fieldset>
-
-      <button class="button-success pure-button button-xlarge">
-        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-    </div>
-
-
-    <div class="thankyou_message" style="display:none;">
-      <h2><em>Спасибо!</em>
-        Мы скоро свяжемся с вами!</h2>
-    </div>
-
-  </form>
-
--->        
-
-
-        
-
-
 
 
 
@@ -188,7 +138,7 @@
                 </p>
             </div>
 
-            <div class="special2-1">
+            <div id="infras"  class="special2-1">
                 <h2>Архитектурная Доминанта</h2>
 
                 <p >
@@ -197,7 +147,9 @@
             </div>
         </div>
 
-        
+
+
+        <h2 class="infrastrh2" > Инфраструктура</h2>
         <div class="infrastr" id="infra">
             <div class="infrastr-card">
                 <div class="card-img">
@@ -291,8 +243,6 @@
 
 
         </div>
-
-
 
 
         <form id="regForm" class="gform" method="POST" data-email="loke0720@gmail.com"
@@ -421,7 +371,7 @@
 
             <div class="tab"><h2>Номер Телеофна</h2> 
                 <fieldset class="pure-group">
-                    <input id="phone--phone" name="Номер Телефона" required placeholder="8(999)999-99-99" />
+                    <input id="phone--phone" type="tel" name="phone"  name="Номер Телефона" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="11" maxlength="11"  required placeholder="89999999999" />
                 </fieldset>      
             </div>
 
@@ -501,11 +451,11 @@
         <div class="grid-form" id="grid-form" style="display: none;">
 
             <form id="regForm" class="gform gform2" method="POST" data-email="loke0720@gmail.com"
-            action="https://script.google.com/macros/s/AKfycbxrAl0MUK25sYSx6bAV2Q8IBXtdMG7sjV4NRZzESWShsc0CiRol/exec">
+                action="https://script.google.com/macros/s/AKfycbxrAl0MUK25sYSx6bAV2Q8IBXtdMG7sjV4NRZzESWShsc0CiRol/exec">
                 <h2>Введите Номер</h2>
                 <br>
                 <fieldset class="grid-phone">
-                    <input id="phone--phone" name="Номер Телефона" required placeholder="89999999999" />
+                    <input id="phone--phone" type="tel" name="phone"  name="Номер Телефона" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="11" maxlength="11"  required placeholder="89999999999" />
                 </fieldset>      
                 <br>
                 <button id="sendbutton" name="redirect" onClick="redirect()">&nbsp;Отправить</button>
