@@ -27,18 +27,19 @@
 
         <div class="topbar">
             <h1>Апекс Грант</h1>
-            <button class="calltopbar"> Заказать Звонок </button>
+            <button class="calltopbar"> <a href="tel:89999999999">8(999)999-99-99</a> </button>
         </div>
 
         <div class="topnav">
             <a href="#about">О Комплексе</a>
             <a href="#special">Преимущества</a>
             <a href="#infra">Инфраструктура</a>
-            <a href="#regForm">Запись</a>
+            <a href="#regForm">Квиз</a>
             <a href="#plan">Планировка</a>
             <a href="#gallery">Галерея</a>
             <a href="#calc">Ипотека</a>
-            <a href="#map">Карта</a>    
+            <a href="#map">Карта</a>
+            <a href="tel:89999999999" class="topnavcall">Позвонить</a>
         </div>
 
 
@@ -297,7 +298,7 @@
         <form id="regForm" class="gform" method="POST" data-email="loke0720@gmail.com"
         action="https://script.google.com/macros/s/AKfycbxrAl0MUK25sYSx6bAV2Q8IBXtdMG7sjV4NRZzESWShsc0CiRol/exec">
         
-        <h2>Запись</h2>
+        <h2>Ответьте на несколько вопросов</h2>
         
         <div class="form-elements">
             
@@ -428,8 +429,7 @@
                 <div style="float:center;" class="pnbuttons">
                   <button type="button" id="prevBtn" onclick="nextPrev(-1)">Назад</button>
                   <button type="button" id="nextBtn" onclick="nextPrev(1)">Вперед</button>
-                  <button id="sendbutton"" style="display: none;" class="button-success pure-button button-xlarge">
-                      <i class="fa fa-paper-plane"></i>&nbsp;Отправить</button>
+                  <button id="sendbutton"" style="display: none;">&nbsp;Отправить</button>
                 </div>
               </div>
         </div>
@@ -472,31 +472,53 @@
                     <h3>    1-Комнатные <br> <small>11 Вариантов</small>   </h3>
 
                     <h4>от 13 500 000₽</h4>
-                    <button>Планировкии и Цены</button>
+                    <button onclick="$('#grid-form').toggle();" >Получить <br> цены и планировки</button>
                 </div>
                 <div class="grid-1">
                     <img src="img/p2.png" alt="">
                     <h3>    2-Комнатные <br> <small>25 Вариантов</small>   </h3>
 
                     <h4>от 20 300 000₽</h4>
-                    <button>Планировкии и Цены</button>
+                    <button onclick="$('#grid-form').toggle();" >Получить <br> цены и планировки</button>
                 </div>
                 <div class="grid-1">
                     <img src="img/p3.png" alt="">
                     <h3>    3-Комнатные <br> <small>31 Вариантов</small>   </h3>
 
                     <h4>от 30 200 000₽</h4>
-                    <button>Планировкии и Цены</button>
+                    <button onclick="$('#grid-form').toggle();" >Получить <br> цены и планировки</button>
                 </div>
                 <div class="grid-1">
                     <img src="img/p4.png" alt="">
                     <h3>    4-Комнатные <br> <small>17 Вариантов</small>   </h3>
 
                     <h4>от 40 100 000₽</h4>
-                    <button>Планировкии и Цены</button>
+                    <button onclick="$('#grid-form').toggle();" >Получить <br> цены и планировки</button>
                 </div>
 
             </div>
+
+        <div class="grid-form" id="grid-form" style="display: none;">
+
+            <form id="regForm" class="gform gform2" method="POST" data-email="loke0720@gmail.com"
+            action="https://script.google.com/macros/s/AKfycbxrAl0MUK25sYSx6bAV2Q8IBXtdMG7sjV4NRZzESWShsc0CiRol/exec">
+                <h2>Введите Номер</h2>
+                <br>
+                <fieldset class="grid-phone">
+                    <input id="phone--phone" name="Номер Телефона" required placeholder="89999999999" />
+                </fieldset>      
+                <br>
+                <button id="sendbutton" name="redirect" onClick="redirect()">&nbsp;Отправить</button>
+
+
+                <div class="thankyou_message" style="display:none;">
+                    <h2><em>Спасибо!</em>
+                      Мы скоро свяжемся с вами!</h2>
+                </div>
+            </form>
+           
+
+        </div>
         </div>
 
         <div class="gallery-video" id="gallery">
@@ -580,7 +602,7 @@
         
 
 
-    <div style="margin-top:2rem; float: right; font-size: 0.9em; color:#999">Ипотечный калькулятор предоставлен сайтом <a href="https://calcus.ru/kreditnyj-kalkulyator" target="_blank">calcus.ru</a></div>
+    <div style="display: none;">Ипотечный калькулятор предоставлен сайтом <a href="https://calcus.ru/kreditnyj-kalkulyator" target="_blank">calcus.ru</a></div>
     <script src="js/main.js" async defer></script>
     <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
     </body>
