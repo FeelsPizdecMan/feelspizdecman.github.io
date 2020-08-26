@@ -165,10 +165,9 @@ body a{
     justify-content: space-around;
     padding: 4rem 0;
     font-size: 2rem;
-    background-color: #ffd034;
+    background-color: #d4cfc0;
     margin: 0 5%;
     color: #111111;
-    filter: grayscale(0.9);
     font-weight: 900;
 }
 
@@ -526,6 +525,9 @@ body a{
 #regForm {
     color: #ffffff;
     margin: 0 5%;
+    display: grid;
+    place-items: center;
+    text-align: center;
     margin-top: 10rem;
     margin-bottom: 10rem;
     min-width: 300px;
@@ -537,11 +539,13 @@ body a{
 
 .pure-group{
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 
 .pnbuttons button{
+    margin-top: 1rem;
     border: none;
     background-color: #ffd034;
     color: #111111;
@@ -575,11 +579,9 @@ body a{
 .gform h2{
     color: #ffd034;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
-.gform .form-elements{
-}
 
 
 .gform fieldset{
@@ -591,17 +593,15 @@ body a{
 .gform input{
     width: 50%;
     padding: 1rem 2rem;
-    margin-left: -10px;
 }
 
 .container {
     display: block;
     position: relative;
     padding: 1rem 2rem;
-    margin-left: -10px;
     margin-bottom: 12px;
-    margin-right: 1rem;
     cursor: pointer;
+    margin-right: 10px;
     font-size: 22px;
     font-weight: 900;
     background-color: #333333;

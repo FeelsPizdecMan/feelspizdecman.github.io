@@ -425,7 +425,7 @@
             </div>
 
             <div style="overflow:auto;">
-                <div style="float:left;" class="pnbuttons">
+                <div style="float:center;" class="pnbuttons">
                   <button type="button" id="prevBtn" onclick="nextPrev(-1)">Назад</button>
                   <button type="button" id="nextBtn" onclick="nextPrev(1)">Вперед</button>
                   <button id="sendbutton"" style="display: none;" class="button-success pure-button button-xlarge">
@@ -563,7 +563,7 @@
 
             <h2>Ипотечный Калькулятор</h2>
 
-            <iframe id="calcus-iframe-ipoteka" width="100%" height="500" frameborder="0" style="width:1px; min-width: 100%;" scrolling="no" src="https://calcus.ru/kalkulyator-ipoteki?embed=1&bgcolor=%23ffd034&buttoncolor=%23111111&type=1&start_sum_type=1"></iframe>
+            <iframe id="calcus-iframe-ipoteka" width="100%" height="300" frameborder="0" style="width:1px; min-width: 100%;" scrolling="no" src="https://calcus.ru/kalkulyator-ipoteki?embed=1&bgcolor=%ffffff&buttoncolor=%23111111&type=1&start_sum_type=1"></iframe>
             <script>
                 window.addEventListener('message', function(event) {
                     if (height_ipoteka = event.data['height_ipoteka']) {
@@ -580,7 +580,7 @@
         
 
 
-
+    <div style="margin-top:2rem; float: right; font-size: 0.9em; color:#999">Ипотечный калькулятор предоставлен сайтом <a href="https://calcus.ru/kreditnyj-kalkulyator" target="_blank">calcus.ru</a></div>
     <script src="js/main.js" async defer></script>
     <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
     </body>
