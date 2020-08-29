@@ -20,6 +20,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+        <script src="js/jquery.maskedinput.min.js"></script>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
@@ -27,7 +28,7 @@
 
         <div class="topbar">
             <h1>Апекс Грант</h1>
-            <button class="calltopbar"> <a href="tel:89999999999">8(999)999-99-99</a> </button>
+            <button class="calltopbar"> <a onclick="$('#popupphone').toggle();">Заказать Звонок</a> </button>
         </div>
 
         <div class="topnav">
@@ -51,14 +52,26 @@
                 <h2>Введите Номер</h2>
                 <br>
                 <fieldset class="popupphoneinput">
-                    <input id="phone--phone" type="tel" name="phone"  name="Номер Телефона"  minlength="11" maxlength="11"  required placeholder="89999999999" />
-                </fieldset>      
+                    <input id="phone--phone" type="tel" name="phone"  name="Номер Телефона"  minlength="11" maxlength="11"  required placeholder="+7 (999) 999-99-99" />
+                </fieldset>
+                <script>
+                    $(document).ready(function() {
+                    $("#phone--phone").mask("+7 (999) 999-99-99");
+                  });
+                </script>      
                 <br>
-                <button id="sendbuttont" onclick="$('#popupphone').toggle();" name="redirect" onClick="redirect()">&nbsp;Отправить</button>
+                <button id="sendbuttont" id="redirect">&nbsp;Отправить</button>
+                <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/masking-input.js" data-autoinit="true"></script>
 
+                <div class="thankyou_message" style="display:none;">
+                    <h2><em>Спасибо!</em>
+                      Мы скоро свяжемся с вами!</h2>
+                </div>
             </form>
             </div>
         </div>
+
+       
         
 
 
@@ -369,10 +382,17 @@
 
             </div>
 
-            <div class="tab"><h2>Номер Телеофна</h2> 
+            <div class="tab"><h2>Номер Телефона</h2> 
                 <fieldset class="pure-group">
-                    <input id="phone--phone" type="tel" name="phone"  name="Номер Телефона" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="11" maxlength="11"  required placeholder="89999999999" />
+                    <input id="ddd" type="tel" name="phone"  name="Номер Телефона"  minlength="11" maxlength="11"  required placeholder="+7 (999) 999-99-99" />
                 </fieldset>      
+
+                <script>
+                    $(document).ready(function() {
+                    $("#ddd").mask("+7 (999) 999-99-99");
+                  });
+                </script>
+
             </div>
 
             <div style="overflow:auto;">
@@ -422,22 +442,109 @@
                     <h3>    1-Комнатные <br> <small>11 Вариантов</small>   </h3>
 
                     <h4>от 13 500 000₽</h4>
-                    <button onclick="$('#grid-form').toggle();" >Получить <br> цены и планировки</button>
+                    <button class="mobilebutton" onclick="$('#grid-form1').toggle();" >Получить <br> цены и планировки</button>
+                    <button class="desltopbutton" onclick="$('#grid-form').toggle();" >Получить <br> цены и планировки</button>
                 </div>
+
+                <div class="grid-form" id="grid-form1" style="display: none;">
+
+                    <form id="regForm" class="gform gform2" method="POST" data-email="loke0720@gmail.com"
+                        action="https://script.google.com/macros/s/AKfycbxrAl0MUK25sYSx6bAV2Q8IBXtdMG7sjV4NRZzESWShsc0CiRol/exec">
+                        <h2>Введите Номер</h2>
+                        <br>
+                        <fieldset class="grid-phone">
+                            <input id="ttt" type="tel" name="phone"  name="Номер Телефона"  minlength="11" maxlength="11"  required placeholder="+7 (999) 999-99-99" />
+                        </fieldset>      
+                        <script>
+                            $(document).ready(function() {
+                            $("#ttt").mask("+7 (999) 999-99-99");
+                          });
+                        </script>
+                        <br>
+                        <button id="sendbutton" name="redirect" onClick="redirect()">&nbsp;Отправить</button>
+        
+        
+                        <div class="thankyou_message" style="display:none;">
+                            <h2><em>Спасибо!</em>
+                              Мы скоро свяжемся с вами!</h2>
+                        </div>
+                    </form>
+                   
+        
+                </div>
+
                 <div class="grid-1">
                     <img src="img/p2.png" alt="">
                     <h3>    2-Комнатные <br> <small>25 Вариантов</small>   </h3>
 
                     <h4>от 20 300 000₽</h4>
-                    <button onclick="$('#grid-form').toggle();" >Получить <br> цены и планировки</button>
+                    <button class="mobilebutton" onclick="$('#grid-form2').toggle();" >Получить <br> цены и планировки</button>
+                    <button class="desltopbutton" onclick="$('#grid-form').toggle();" >Получить <br> цены и планировки</button>
                 </div>
+
+                <div class="grid-form" id="grid-form2" style="display: none;">
+
+                    <form id="regForm" class="gform gform2" method="POST" data-email="loke0720@gmail.com"
+                        action="https://script.google.com/macros/s/AKfycbxrAl0MUK25sYSx6bAV2Q8IBXtdMG7sjV4NRZzESWShsc0CiRol/exec">
+                        <h2>Введите Номер</h2>
+                        <br>
+                        <fieldset class="grid-phone">
+                            <input id="ttt" type="tel" name="phone"  name="Номер Телефона"  minlength="11" maxlength="11"  required placeholder="+7 (999) 999-99-99" />
+                        </fieldset>      
+                        <script>
+                            $(document).ready(function() {
+                            $("#ttt").mask("+7 (999) 999-99-99");
+                          });
+                        </script>
+                        <br>
+                        <button id="sendbutton" name="redirect" onClick="redirect()">&nbsp;Отправить</button>
+        
+        
+                        <div class="thankyou_message" style="display:none;">
+                            <h2><em>Спасибо!</em>
+                              Мы скоро свяжемся с вами!</h2>
+                        </div>
+                    </form>
+                   
+        
+                </div>
+
                 <div class="grid-1">
                     <img src="img/p3.png" alt="">
                     <h3>    3-Комнатные <br> <small>31 Вариантов</small>   </h3>
 
                     <h4>от 30 200 000₽</h4>
-                    <button onclick="$('#grid-form').toggle();" >Получить <br> цены и планировки</button>
+                    <button class="mobilebutton" onclick="$('#grid-form3').toggle();" >Получить <br> цены и планировки</button>
+                    <button class="desltopbutton" onclick="$('#grid-form').toggle();" >Получить <br> цены и планировки</button>
                 </div>
+
+                <div class="grid-form" id="grid-form3" style="display: none;">
+
+                    <form id="regForm" class="gform gform2" method="POST" data-email="loke0720@gmail.com"
+                        action="https://script.google.com/macros/s/AKfycbxrAl0MUK25sYSx6bAV2Q8IBXtdMG7sjV4NRZzESWShsc0CiRol/exec">
+                        <h2>Введите Номер</h2>
+                        <br>
+                        <fieldset class="grid-phone">
+                            <input id="ttt" type="tel" name="phone"  name="Номер Телефона"  minlength="11" maxlength="11"  required placeholder="+7 (999) 999-99-99" />
+                        </fieldset>      
+                        <script>
+                            $(document).ready(function() {
+                            $("#ttt").mask("+7 (999) 999-99-99");
+                          });
+                        </script>
+                        <br>
+                        <button id="sendbutton" name="redirect" onClick="redirect()">&nbsp;Отправить</button>
+        
+        
+                        <div class="thankyou_message" style="display:none;">
+                            <h2><em>Спасибо!</em>
+                              Мы скоро свяжемся с вами!</h2>
+                        </div>
+                    </form>
+                   
+        
+                </div>
+
                 <div class="grid-1">
                     <img src="img/p4.png" alt="">
                     <h3>    4-Комнатные <br> <small>17 Вариантов</small>   </h3>
@@ -455,8 +562,13 @@
                 <h2>Введите Номер</h2>
                 <br>
                 <fieldset class="grid-phone">
-                    <input id="phone--phone" type="tel" name="phone"  name="Номер Телефона" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="11" maxlength="11"  required placeholder="89999999999" />
+                    <input id="ttt" type="tel" name="phone"  name="Номер Телефона"  minlength="11" maxlength="11"  required placeholder="+7 (999) 999-99-99" />
                 </fieldset>      
+                <script>
+                    $(document).ready(function() {
+                    $("#ttt").mask("+7 (999) 999-99-99");
+                  });
+                </script>
                 <br>
                 <button id="sendbutton" name="redirect" onClick="redirect()">&nbsp;Отправить</button>
 
@@ -469,6 +581,8 @@
            
 
         </div>
+
+
         </div>
 
         <div class="gallery-video" id="gallery">
@@ -550,7 +664,6 @@
             <h2>Карта</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158217.85882822846!2d36.04205083782386!3d51.711924218294754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412f0375da12791b%3A0x9788ae489cd5e746!2z0JrRg9GA0YHQuiwg0JrRg9GA0YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1598242523680!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        </div>
         
-
 
     <div style="display: none;">Ипотечный калькулятор предоставлен сайтом <a href="https://calcus.ru/kreditnyj-kalkulyator" target="_blank">calcus.ru</a></div>
     <script src="js/main.js" async defer></script>

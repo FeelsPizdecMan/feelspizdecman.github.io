@@ -701,8 +701,20 @@ body button:hover{
 
 
 .gform input{
-    width: 50%;
+    width: 45%;
     padding: 1rem 2rem;
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    color: #ffffff;
+    font-weight: 900;
+    width: 65%;
+    font-size: 2rem;
+    border-bottom: 3px solid #ffd034;
+}
+
+.gform input:focus{
+    outline: none;
 }
 
 .container {
@@ -812,6 +824,7 @@ body button:hover{
     padding: 1rem 2rem;
     color: #ffffff;
     font-weight: 900;
+    width: 65%;
     font-size: 2rem;
     border-bottom: 3px solid #ffd034;
 }
@@ -819,6 +832,7 @@ body button:hover{
 .popupphonediv input:focus{
     outline: none;
 }
+
 
 .popupphonediv button{
     background-color: #ffffff;
@@ -832,4 +846,49 @@ body button:hover{
     background-color: #ffd034;
     border: none;
     padding: 0.5rem 1rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .popupphone{
+        width: 100%;
+        margin-top: -3rem;
+    }
+
+    .popupphonediv{
+        width: 95%;
+        padding: 2rem 0;
+        margin: 0 1%;
+    }
+
+    .popupphonediv h2{
+        font-size: 2rem;
+    }
+
+    .popupphonediv input{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .popupphonediv #sendbuttont{
+        font-size: 2rem;
+    }
+
+    .infrastrh2{
+        font-size: 2rem;
+    }
+
+
+    .grid-1 .desltopbutton{
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) {
+    .grid-1 .mobilebutton{
+        display: none;
+    }
 }

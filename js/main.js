@@ -114,3 +114,5 @@ var display = function(block_name, title) {
     }
 })();
 
+
+const mq = window.matchMedia( "(min-width: 500px)" );
