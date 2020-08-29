@@ -361,12 +361,30 @@ body button:hover{
 
 .infrastr-card .card-img{
     flex: 1;
-    background-image: url(../img/bg1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
 }
+
+.img1{
+    background-image: url(../img/bg1.jpg);
+}
+
+.img2{
+    background-image: url(../img/bg2.jpg);
+
+}
+
+
+.img3{
+    background-image: url(../img/bg3.jpg);
+}
+
+.img4{
+    background-image: url(../img/bg4.jpg);
+}
+
 
 
 .infrastr-card .card-img img{
@@ -392,15 +410,6 @@ body button:hover{
         flex-direction: column;
         margin-right: 2rem;
         font-weight: 900;
-    }
-
-    .infrastr-card .card-img{
-        flex: 1;
-        background-image: url(../img/bg1.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
     }
 
 
