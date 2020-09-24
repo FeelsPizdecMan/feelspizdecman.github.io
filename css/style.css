@@ -37,16 +37,11 @@ html, body {
 	    -ms-flex-direction: column;
         flex-direction: column;
 	}
-
-	#u102-4{
-		zoom: 1.2;
-	}
-
-	#u294-6, #u9191-6, #u9194-5 {
+	#u102-4, #u294-6, #u9191-6, #u9194-5 {
 		zoom: 1.3;
 	}
 	#u217-4 {
-		margin-top: 30px;
+		margin-top: 20px;
 	}
 	#u5595-4 {
 		margin-bottom: 60px;
