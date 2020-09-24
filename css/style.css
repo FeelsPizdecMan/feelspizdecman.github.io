@@ -4,17 +4,19 @@ ul.cycler li {
 	letter-spacing: -0.05em;
 	margin-top: -5px;
 	font-size: 4rem;
+	background-color: #fff;
+	padding: 0 3px;
 }
 
 ul.cycler {
 	line-height: 1.2em;
-	text-align: left;
+	text-align: center;
 }
 
 .cyclerdays,
 .cyclerhours,
 .cyclerminutes {
-	margin-right: 0.5em;
+	margin-right: 20px;
 }
 html, body {
 	overflow-x: hidden;
