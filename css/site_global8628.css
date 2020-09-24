@@ -587,9 +587,3 @@ span.actAsPara {
     display: none;
     position: fixed;
 }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    body {
-        text-rendering: auto;
-    }
-}
