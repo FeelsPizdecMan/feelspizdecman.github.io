@@ -36,7 +36,6 @@ html, body {
     	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 		flex-direction: column;
-		flex-wrap: wrap;
 	}
 	#u102-4, #u294-6, #u9191-6, #u9194-5 {
 		zoom: 1.3;
