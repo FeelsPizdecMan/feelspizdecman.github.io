@@ -33,31 +33,28 @@
 
 #u98-8 {
     z-index: 1215;
-    width: 524px;
+    width: 100%;
     min-height: 68px;
     background-color: transparent;
     color: #212434;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: relative;
-    margin-right: -10000px;
-    margin-top: 8px;
-    left: 6px;
+    margin: 8px 6px;
 }
 
 #u98-2 {
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 24px;
     font-weight: 700;
 }
 
 #u98-4 {
-    line-height: 15px;
+    line-height: 16px;
     padding-top: 3px;
     font-weight: 400;
 }
 
 #u98-6 {
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 15px;
     font-weight: 400;
 }
@@ -461,9 +458,13 @@
     color: #FFFFFF;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
-    position: relative;
-    margin-right: -10000px;
-    left: 3px;
+}
+
+@media only screen and (max-width: 800px) {
+    #u217-4 {
+        margin-top: 3rem !important;
+        margin-left: 1rem;
+    }
 }
 
 #u216:hover #u217-4 {
@@ -479,7 +480,6 @@
     padding-bottom: 0px;
     min-height: 27px;
     width: 214px;
-    margin: 0px -10000px 0px 0px;
 }
 
 #u216:active #u217-4 {
@@ -495,7 +495,7 @@
     padding-bottom: 0px;
     min-height: 27px;
     width: 214px;
-    margin: 0px -10000px 0px 0px;
+
 }
 
 #u216.PamphletThumbSelected #u217-4 {
@@ -512,7 +512,6 @@
     padding-bottom: 0px;
     min-height: 27px;
     width: 214px;
-    margin: 0px -10000px 0px 0px;
 }
 
 #u216.PamphletThumbSelected #u217-4 p,
