@@ -3,11 +3,12 @@ ul.cycler li {
 	display: inline-block;
 	letter-spacing: -0.05em;
 	margin-top: -5px;
+	font-size: 4rem;
 }
 
 ul.cycler {
 	line-height: 1.2em;
-	text-align: center;
+	text-align: left;
 }
 
 .cyclerdays,
