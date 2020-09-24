@@ -143,27 +143,7 @@ body {
     font-feature-settings: "liga";
 }
 
-a:link {
-    color: #0000ff;
-    text-decoration: underline;
-}
-
-a:visited {
-    color: #800080;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: #0000ff;
-    text-decoration: underline;
-}
-
-a:active {
-    color: #ee0000;
-    text-decoration: underline;
-}
-
-a.nontext {
+a{
     color: black;
     text-decoration: none;
     font-style: normal;
