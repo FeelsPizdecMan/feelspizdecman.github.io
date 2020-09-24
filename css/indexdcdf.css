@@ -33,7 +33,7 @@
 
 #u98-8 {
     z-index: 1215;
-    width: 524px;
+    width: 90%;
     min-height: 68px;
     background-color: transparent;
     color: #212434;
@@ -62,11 +62,19 @@
     font-weight: 400;
 }
 
+@media only screen and (max-width: 799px) {
+    #u102-4 {
+        font-size: 3rem;
+        background-color: tan;
+    }
+
+}
+
 #u102-4 {
     z-index: 1223;
     width: 300px;
     min-height: 34px;
-    background-color: transparent;
+    background-color: pink;
     line-height: 32px;
     text-align: right;
     font-size: 27px;
@@ -78,6 +86,7 @@
     margin-top: 5px;
     left: 750px;
 }
+
 
 .js body.initialized {
     visibility: visible;
