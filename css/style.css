@@ -191,6 +191,7 @@ html, body {
 	}
 	.respaward h1{
 		font-size: 2.5rem;
+		line-height: 50px;
 	}
 	.respaward p{
 		font-size: 2rem !important;
