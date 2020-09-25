@@ -166,6 +166,10 @@ html, body {
 		zoom: 1;
 	}
 
+	#u9243-8 h1{
+		font-size: 2rem;
+	}
+
 	.respinput{
 		margin-top: 13rem !important;
 		text-align: center !important;
