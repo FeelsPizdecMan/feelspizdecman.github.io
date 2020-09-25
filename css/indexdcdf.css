@@ -5437,16 +5437,6 @@
 }
 
 
-.strikeout::after {
-    border-bottom: 0.125em solid red;
-    content: "";
-    left: 0;
-    margin-top: calc(0.125em / 2 * -1);
-    position: absolute;
-    right: 0;
-    top: 50%;
-  }
-
 #widgetu10011.focus-st #u10012-4 {
     border-style: solid;
     border-width: 2px;
@@ -5995,6 +5985,107 @@
     line-height: 0px;
 }
 
+#u294-2{
+    position: relative;
+}
+
+#u294-2::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    color: red;
+    border-top: 1px solid red;
+    border-color: inherit;
+  
+    -webkit-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+}
+#u9568-2{
+    position: relative;
+}
+
+#u9568-2::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    color: red;
+    border-top: 1px solid red;
+    border-color: inherit;
+  
+    -webkit-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+}
+#u9640-2{
+    position: relative;
+}
+
+#u9640-2::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    color: red;
+    border-top: 1px solid red;
+    border-color: inherit;
+  
+    -webkit-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+}
+#u9944-2{
+    position: relative;
+}
+
+#u9944-2::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    color: red;
+    border-top: 1px solid red;
+    border-color: inherit;
+  
+    -webkit-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+}
+#u10000-2{
+    position: relative;
+}
+
+#u10000-2::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    color: red;
+    border-top: 1px solid red;
+    border-color: inherit;
+  
+    -webkit-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+}
+
 #u9191,
 #u9571,
 #u9612,
@@ -6026,6 +6117,7 @@
     font-size: 24px;
     line-height: 24px;
 }
+
 
 #u294,
 #u294-3,
