@@ -171,6 +171,12 @@ html, body {
 		text-align: center !important;
 		background-color: rgb(206, 0, 42);
 	}
+	.respaward h1{
+		font-size: 2rem;
+	}
+	.respaward p{
+		font-size: 1.5rem !important;
+	}
 
 	#u8395-5{
 		font-size: 2rem !important;
