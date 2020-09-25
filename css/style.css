@@ -323,6 +323,16 @@ html, body {
     	width: 1060px;
 	    top: 15px;
 	}
+	.container_this h2{
+		font-size: 3rem;
+	}
+	.container_this h4{
+		font-size: 2.5rem;
+	}
+	.container_this p{
+		font-size: 1.5rem;
+	}
+
 	#u9615-4 {
 		font-size: 40px;
     	width: 1060px;
