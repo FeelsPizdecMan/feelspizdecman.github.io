@@ -3,9 +3,9 @@ ul.cycler li {
 	display: inline-block;
 	letter-spacing: -0.05em;
 	margin-top: -5px;
-	font-size: 4rem;
+	font-size: 3rem;
 	background-color: #fff;
-	padding: 10px 5px;
+	padding: 0px 10px;
 }
 
 ul.cycler {
@@ -16,7 +16,7 @@ ul.cycler {
 .cyclerdays,
 .cyclerhours,
 .cyclerminutes {
-	margin-right: 20px;
+	margin-right: 00px;
 }
 html, body {
 	overflow-x: hidden;
@@ -88,6 +88,9 @@ html, body {
 	#u8136-14, #u8192-5, #u844-2, .content h4, #u8139-4 h1, #u8192-8 a{
 	    line-height: 1.1;
 	    font-size: 30px;
+	}
+	#u242-4 h1{
+		zoom: 0.5;
 	}
 	#u8136-14{
 		padding: 5px 10px 30px;
