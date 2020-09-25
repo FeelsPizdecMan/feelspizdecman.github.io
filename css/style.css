@@ -130,7 +130,8 @@ html, body {
 
 	.desc-cam{
 		zoom: 5 !important;
-		background-color: pink;
+		background-color: aqua;
+		font-size: 4rem !important;
 	}
 
 
