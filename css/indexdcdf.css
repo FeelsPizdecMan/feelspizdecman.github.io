@@ -5436,6 +5436,17 @@
     box-shadow: inset 0px 0px 8px rgba(127, 140, 141, 0.5), inset 0px 0px 8px rgba(127, 140, 141, 0.5);
 }
 
+
+.strikeout::after {
+    border-bottom: 0.125em solid red;
+    content: "";
+    left: 0;
+    margin-top: calc(0.125em / 2 * -1);
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+
 #widgetu10011.focus-st #u10012-4 {
     border-style: solid;
     border-width: 2px;
