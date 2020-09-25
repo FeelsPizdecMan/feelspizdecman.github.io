@@ -129,12 +129,12 @@ html, body {
 	*/
 
 	.desc-cam{
+		zoom: 2;
 		background-color: aqua;
-		font-size: 4rem !important;
 	}
 
 	.desc-cam p{
-		font-size: 3rem !important;
+		font-size: 1em !important;
 	}
 
 
