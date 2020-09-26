@@ -10,7 +10,6 @@
 	<!--  ,user-scalable=no -->
 
 
-
 	<link rel="shortcut icon" type="image/png" href="favicon.png" />
 
 	<script type="text/javascript">
@@ -33,7 +32,38 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/site_global8628.css?crc=76208288" />
 	<link rel="stylesheet" type="text/css" href="css/indexdcdf.css?crc=29212364" id="pagesheet" />
-	<link rel="stylesheet" href="css/style.css">
+	
+<script type="text/javascript">
+
+	function getcss(cssfile){
+	
+	loadcss = document.createElement('link')
+	
+	loadcss.setAttribute("rel", "stylesheet")
+	
+	loadcss.setAttribute("type", "text/css")
+	
+	loadcss.setAttribute("href", cssfile)
+	
+	document.getElementsByTagName("head")[0].appendChild(loadcss)
+	
+	}
+	
+	if (navigator.userAgent.match(/android/i))
+	// Defines the resolution range you're targeting (less than 800 pixels wide in this case)
+	{
+	getcss('css/style.css') 
+	// Defines the .css file you want to load for this range (800x600.css)
+	}
+	else 
+	{
+	getcss('css/style12.css')
+	//This else statement has "if" condition. If none of the following criteria are met, load 1280x1024.css
+	}
+
+	</script>
+
+
 	<!-- IE-only CSS -->
 	<!--[if lt IE 9]>
 		  <link rel="stylesheet" type="text/css" href="css/iefonts_index.css?crc=3836932024"/>
