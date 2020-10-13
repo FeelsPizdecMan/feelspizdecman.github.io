@@ -997,6 +997,7 @@ nav a {
     padding: 1rem 1%;
     overflow: scroll;
     white-space: nowrap;
+    position: -webkit-sticky;
     justify-content: space-between;
   }
 
@@ -1062,7 +1063,7 @@ nav a {
   }
 
   .consultinput input{
-    width: 100%;
+    width: 80%;
     margin-bottom: 1rem;
   }
   
