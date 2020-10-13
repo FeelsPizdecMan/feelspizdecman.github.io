@@ -1061,6 +1061,10 @@ nav a {
     margin-bottom: 1rem;
   }
 
+  .consultinput input::placeholder{
+    font-size: 1.5rem !important;
+  }
+
   
   .aboutusfl {
     font-size: 1.2rem;
