@@ -1068,7 +1068,8 @@ nav a {
   }
 
   .consultinput input{
-    width: 80%;
+    width: 95%;
+    height: 60px;
     margin-bottom: 1rem;
   }
   
