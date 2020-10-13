@@ -8,14 +8,15 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Адвкоатская Коллегия Дагестанской Республики</title>
-    <meta name="description" content="Адвокатская Коллегия Дагестан " />
+    <meta name="description" content="Адвокатская Коллегия Дагестан"/>
+    <meta name="keywords" content="Адвокат Дагестан Юрист" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <nav>
       <a href="#home">Главная</a>
-      <a href="#princ">Gринципы работы</a>
+      <a href="#princ">Принципы работы</a>
       <a href="#vigodi">Выгоды</a>
       <a href="#sevices">Услуги</a>
       <a href="#about">О нас</a>
@@ -43,10 +44,22 @@
         <p>Представительство в <br> суде</p>
       </div>
 
-      <div class="jumboliel">
+      <div class="jumboliel"  id="free">
         <p>Бесплатная консультация, в том числе онлайн <br> или по телефону</p>
       </div>
 
+    </div>
+
+
+    <div class="consult">
+      <div class="consultfl">
+        <h1>Получить бесплатную Консультацию</h1>
+      </div>
+      <form class="consultinput" method="POST"  action="order.php">
+        <input type="text" id="name" required name="name" placeholder="Имя" class="name">
+        <input type="phone" id="phone" required name="phone" placeholder="Номер Телефона" class="tel">
+        <button class="submit">Отправить</button>
+      </form>
     </div>
 
 
@@ -138,6 +151,9 @@
       </div>
     </div>
 
+  <div class="containerforb">
+    <a href="#free" class="buttonto">Получить Бесплатную Консультацию</a>
+  </div>
 
     <div class="aboutus time">
       <div class="aboutusfl">
@@ -152,6 +168,10 @@
           В большинстве случаев после первой бесплатной консультации большая часть вопросов решается. Именно поэтому мы всегда говорим своим клиентам - не затягивайте ситуацию до критической отметки. Бесплатная консультация ни к чему не обязывает, мы не навязываем Вам покупку дополнительных услуг. <br>
           </p>
       </div>
+    </div>
+
+    <div class="containerforb">
+      <a href="#free" class="buttonto">Получить Бесплатную Консультацию</a>
     </div>
 
 
@@ -869,6 +889,11 @@
     </div>
 
 
+    <div class="containerforb">
+      <a href="#free" class="buttonto">Получить Бесплатную Консультацию</a>
+    </div>
+
+
     <div class="prefooter">
       <h1>АДВОКАТСКОЕ ОБРАЗОВАНИЕ «ДАГЕСТАНСКАЯ РЕСПУБЛИКАНСКАЯ КОЛЛЕГИЯ АДВОКАТОВ»</h1>
 
@@ -902,6 +927,10 @@
       </p>
 
     </div>
+    
+
+    <a href="#free" class="alwayson">Бесплатная консультация</a>
+
 
     <script src="js/main.js" async defer></script>
   </body>
