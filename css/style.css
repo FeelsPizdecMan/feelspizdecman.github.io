@@ -1,369 +1,1045 @@
-
-ul.cycler li {
-	display: inline-block;
-	letter-spacing: -0.05em;
-	margin-top: -5px;
-	font-size: 3rem;
-	background-color: #fff;
-	padding: 10px 10px;
+body {
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
 }
 
-ul.cycler {
-	line-height: 1.2em;
-	text-align: center;
+nav {
+  background-color: #8022fd;
+  padding: 1.5rem 10%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  justify-content: space-around;
 }
 
-.cyclerdays,
-.cyclerhours,
-.cyclerminutes {
-	margin-right: 00px;
-}
-html, body {
-	overflow-x: hidden;
-}
-#u7757-bw {
-    margin-top: 0px;
-}
-/*HTML Widget*/
-
-.present-block-text {
-	background: #FD2016;
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
-
-@media screen and (max-width: 1060px) {
-	#u5581_align_to_page {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-    	-webkit-box-orient: vertical;
-    	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-        flex-direction: column;
-	}
-	#u102-4, #u294-6, #u9191-6, #u9194-5 {
-		zoom: 1.3;
-	}
-	#u217-4 {
-		margin-top: 20px;
-	}
-	#u5595-4 {
-		margin-bottom: 60px;
-	}
-	#u102-4 p{
-		text-align: left;
-	}
-	#pamphletu212 {
-		left: 0;
-    	margin: 150px 0 10px 0;
-	}
-	#u1062, #u216{
-		transform: scale(2);
-	}
-	#u5595-2, #u5595-4{
-		font-size: 40px !important;
-	}
-	#u102-4 p {
-		font-size: 40px;
-		margin-bottom: 20px;
-	}
-	#u98-8 {
-		zoom: 2.5;
-	}
-	#u8136-14, #u8192-5, #u844-2, .content h4, #u8139-4 h1, #u8192-8 a{
-	    line-height: 1.1;
-	    font-size: 30px;
-	}
-	#u8136-14{
-		padding: 5px 10px 30px;
-	}
-	#pu5309-12 {
-	    display: -webkit-box;
-	    display: -ms-flexbox;
-	    display: flex;
-    	-webkit-box-orient: vertical;
-    	-webkit-box-direction: normal;
-    	    -ms-flex-direction: column;
-    	        flex-direction: column;
-    	-webkit-box-pack: center;
-    	    -ms-flex-pack: center;
-    	        justify-content: center;
-	}
-	#pu5309-12>div {
-		width: 518px;
-		zoom: 2;
-    	left: 0;
-	}
-	#buttonu9785 {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-    	-webkit-box-orient: vertical;
-    	-webkit-box-direction: normal;
-    	    -ms-flex-direction: column;
-    	        flex-direction: column;
-	}
-	#u9297, #u10202 {
-		zoom: 1.5;
-    	left: 0;
-	}
-	#u9851-15 td{
-		display: block;
-	}
-	#u9851-15 td>iframe {
-		width: 100%;
-    	height: 600px;
-    	margin: 60px 0 60px 0;
-	}
-	.desc-cam, #pu6057-48 {
-		zoom: 2;
-	}
-	#u294-4 {
-		font-size: 29px;
-	}
-	#widgetu9259 {
-		margin-top: 50px;
-		left: 0;
-		zoom: 1.3;
-	}
-	#u9258-17 {
-		margin-top: 100px;
-		left: 0;
-		zoom: 1.3;
-	}
-	#u905-4 {
-		margin: 100px 0 50px 0;
-		zoom: 1.3;
-		left: 100px;
-	}
-	#widgetu9247, #u9865_img, #u7455 {
-		zoom: 1.3;
-	}
-	#pu9865 {
-		margin: 0;
-	}
-	#u9865, #u9899-4, #u102-4 {
-	    width: 1000px;
-	}
-	#u9899-4 h1 {
-		font-size: 28px !important;
-		margin-top: 40px;
-	}
-	#u9902-4, #u9985-4 {
-		margin-top: 425px;
-	}
-	#u1770 {
-		zoom: 1.4;
-    	left: 0;
-	}
-	#pu1776-4, #u2165 {
-		display: none;
-	}
-	#u7762 {
-		clear: both;
-		zoom: 2;
-		margin-top: 40px;
-	}
-	#u7759 {
-		left: 120px;
-		zoom: 1.42;
-	}
-	#pu8385 {
-		margin-top: 201px;
-		margin-left: 131px;
-		zoom: 2;
-	}
-	#u294-2 {
-		line-height: 1.9;
-	}
-	#u102-4 {
-		left: 450px;
-	}
-	.yved {
-		zoom: 1.7;
-	}
-	#u10150_off .col-sm-6 {
-		clear: both;
-		width: 95%;
-		zoom: 1.5;
-	}
-	.container_this {
-	    width: auto !important;
-	}
-	#u7758-6 {
-		zoom: 1.2;
-	}
-	#u1815-50 {
-		clear: both;
-		left: 0;
-	}
-	#u7761-4, #u7764-4{
-		transform: scale(1.5);
-	}
-	#u7761-4 {
-		margin-top: 535px;
-    	left: 484px;
-	}
-	#u7764-4{
-		margin-top: 535px;
-    	left: 367px;
-	}
-	#u7758-6 {
-		width: 900px;
-		left: 0;
-	}
-	#u1086-21 * {
-	    font-size: 27px;
-	    line-height: 1.1;
-	}
-	#u1086-9 {
-		margin-top: -100px;
-	}
-	#u1093 {
-		margin-top: 296px;
-	}
-	#u841_align_to_page {
-		margin-top: 40px;
-	}
-	#u935-47 {
-		font-size: 30px;
-    	line-height: 1.1;
-	}
-	#u936-56 {
-		display: none;
-	}
-	#u937-8, #u938-4, #u939-5 {
-		font-size: 30px;
-    	line-height: 1.1;
-	}
-	#pu929-6 .rounded-corners {
-		margin-top: 20px;
-	}
-	#pbuttonu9733, #pbuttonu9785, #pbuttonu9794 {
-		display: flex;
-    	flex-direction: column;
-    	margin-top: 0;
-	}
-	#pbuttonu9733 > .Button, #pbuttonu9785 > .Button, #pbuttonu9794 > .Button {
-		left: 100px;
-		zoom: 2;
-		margin-top: 30px;
-	}
-	#buttonu9794, #buttonu9772 {
-		left: 11px !important;
-	}
-	#u5304-17 {
-		min-height: 1px;
-	}
-	#u9600{
-	    clear: both;
-	    zoom: 2;
-	    margin-top: 40px;
-        left: 12px;
-	}
-	#u9434 {
-		zoom: 2;
-		left: 12px;
-	}
-	#widgetu9460 {
-		margin-top: 737px;
-    	zoom: 2;
-	}
-	#widgetu9667 {
-		left: 44px;
-	    zoom: 2;
-	    top: 757px;
-	}
-	#u9440-4, #u9902-4 {
-	    font-size: 40px;
-    	width: 1060px;
-	    top: 15px;
-	}
-	#u9615-4 {
-		font-size: 40px;
-    	width: 1060px;
-    	top: 757px;
-    	top: 1637px;
-    	left: 0;
-	}
-	#u9570 {
-	    margin-top: 462px;
-    	left: 185px;
-    	zoom: 2;
-	}
-	#u9624 {
-		margin-top: 1272px;
-    	left: 185px;
-    	zoom: 2;
-	}
-	#u9991 {
-		clear: both;
-	    zoom: 2;
-	    margin-top: 40px;
-        left: 12px;
-	}
-	#u9985-4 {
-		font-size: 40px;
-	    width: 1060px;
-	    top: 1635px;
-	    left: 0;
-	}
-	#widgetu10003 {
-		left: 44px;
-	    zoom: 2;
-	    top: 660px;
-	}
-	#widgetu10054 {
-		zoom: 2;
-	    margin-top: 886px;
-	}
-	#u9905 {
-		left: 12px;
-		zoom: 2;
-	}
-	#u9941 {
-		margin-top: 607px;
-    	left: 185px;
-    	zoom: 2;
-	}
-	#u10125 {
-		margin-top: 1417px;
-    	left: 185px;
-    	zoom: 2;
-	}
-	#u9918 {
-		left: calc(1060px / 2 - 31px / 2);
-	}
-	#u10128 {
-		top: 1614px;
-    	left: calc(1060px / 2 - 31px / 2);
-	}
-	#u10173-6, #u9456-6 {
-		left: 261px;
-	}
-	#u10173-6>h1>div, #u9456-6>h1>div {
-		zoom: 2;
-    	left: 0 !important;
-    	top: 50px !important;
-	}
-	#u10173-6 p, #u9456-6 p {
-		padding: 10px;
-	}
-	#u1768_align_to_page, #u9416_align_to_page {
-		padding-bottom: 736px;
-	}
-	#u905-4>div {
-	    top: 200px !important;
-	    left: 10px !important;
-	}
-	#u9239 {
-		padding-bottom: 430px;
-	}
-	#u296 {
-		top: 220px;
-    	left: 690px;
-	}
-	#u930-6 {
-		font-size: 33px;
-	}
+.jumbo {
+  background-color: #8022fd;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 30px;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
 }
+
+.jumboli{
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 2%;
+  padding: 0 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #8022fd;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+.jumboli hr{
+  border: 0.5px solid #ffffff91;
+}
+
+
+.aboutus {
+  display: flex;
+  margin: 4rem 13%;
+  background-color: #f9f9f9;
+}
+
+.aboutusfl {
+  background-color: #ffffff;
+  color: #8022fd;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: 900;
+  display: flex;
+  padding: 0 1.5rem;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 4px 0px 4px #ffffff3a, 0px 5px 4px rgba(128, 34, 253, 0.22);
+}
+
+.aboutusfl svg{
+  margin-bottom: 10px;
+}
+
+.aboutusfl hr{
+  border: 2px solid #8022fd;
+  width: 100%;
+}
+
+.aboutustext {
+  background-color: #8022fd;
+  color: #ffffff;
+  padding: 0 2rem;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0px 5px 4px rgba(128, 34, 253, 0.22);
+}
+
+.aboutustext p {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.workrules {
+  background-color: #8022fd;
+  color: #f9f9f9;
+  margin: 0 2%;
+  border-radius: 20px;
+  box-shadow: 0px 5px 4px rgba(128, 34, 253, 0.22);
+}
+
+.workrules h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.workrulesgrid {
+  display: flex;
+  justify-content:flex-start;
+  margin: 0 2%;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+
+.vigodi{
+  margin: 0 2% !important;
+}
+
+.vigodi h1{
+  text-align: center;
+}
+
+.vigodi .sgriditembottom{
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.time{
+  flex-flow: column;
+}
+
+.time .aboutusfl{
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  box-shadow: 0px 4px 4px #ffffff3a;
+}
+
+.time .aboutustext{
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.time .aboutustext p{
+  font-size: 1.2rem ;
+}
+
+.workrulesgrid-item h2 {
+  background-color: #fff;
+  border-radius: 20px;
+  color: #8022fd;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.workrulesgrid-item {
+  margin: 0 2rem;
+}
+
+.workrulesgrid-item p {
+  font-weight: 500;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+.firstitemgrid {
+  margin-left: 0;
+}
+
+.bossestag {
+  color: #fff;
+  border-radius: 30px;
+  background-color: #8022fd;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin: 0 25%;
+  box-shadow: 0px 5px 4px rgba(128, 34, 253, 0.22);
+}
+
+.bosses {
+  margin-top: 8rem;
+}
+
+.bossesbio {
+  display: flex;
+}
+
+
+.bio1 .bossesbio-photo{
+  background-image: url(../img/-Акиф-scaled-1-e1596967795250-min.jpg);
+}
+
+.bio2 .bossesbio-photo{
+  background-image: url(../img/-Гульнара-scaled-e1596975931593-min.jpg);
+}
+
+.bossesbio-photo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #8022fd;
+  flex: 1.5;
+}
+
+.bossesbio-txt {
+  flex: 1;
+  background-color: #8022fd;
+  color: #fff;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+}
+
+.bossesbio-txt h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  border-bottom: 3px solid #fff;
+  width: 80%;
+  padding-bottom: 1rem;
+  transition: 0.5s ease-in-out all;
+}
+
+.bossesbio-txt h1:hover {
+  width: 90%;
+  transition: 0.5s all ease-in-out;
+}
+
+.bossesbio-txt h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.bossesbio-txt h3 {
+  width: 400px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.bossesbio-txt button {
+  background-color: #fff;
+  border: none;
+  color: #8022fd;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  text-align: center;
+  border-radius: 50px;
+  font-weight: 900;
+  margin-top: 1.5rem;
+  box-shadow: 0px 5px 4px rgba(255, 255, 255, 0.22);
+}
+
+.bio1 {
+  margin-top: 4rem;
+}
+
+.personal {
+  margin-top: 8rem;
+}
+
+.personal h1 {
+  color: #fff;
+  border-radius: 30px;
+  background-color: #8022fd;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin: 0 35%;
+  box-shadow: 0px 5px 4px rgba(128, 34, 253, 0.22);
+}
+
+.personalgrid {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-x: auto !important;
+  margin-top: 2rem;
+}
+
+.person1{
+  background-image: url(../img/-Акиф-scaled-1-e1596967795250-min.jpg);
+  background-size: cover;
+  background-position: center;
+  font-size: 2rem !important;
+}
+
+.person1::before{
+  content: "8 (928) 052 99 80 beibutov@mail.ru \A \A Специализация: Гражданское право, уголовное право, семейное право, трудовые, земельные споры";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+
+.person2{
+  background-image: url(../img/-Гульнара-scaled-e1596975931593-min.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.person2::before{
+  content: "8(906)481 15 78 \A 88gulnar@mail.ru \A \A Специализация: Гражданское право, уголовное право, семейное право, трудовые, земельные споры";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person3{
+  background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person3::before{
+  content: "8(965) 490 66 66 djeffer595@mail.ru \A \A Специализация: Гражданское право, уголовное право, семейное право, трудовые, земельные споры";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person4{
+  background-image: url(../img/-Магомед-scaled-1-e1596975733749-min.jpg);
+  background-size: cover;
+  background-position: center;
+  font-size: 2rem !important;
+}
+
+.person4::before{
+  content: "8 (928) 937 66 40 maga0931972@gmail.com\A \A Специализация:Уголовное право, защита по уголовным делам террористической направленности, о наркотиках, семейное право";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person5{
+  background-image: url(../img/female-headshot-silhouette-12.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person5::before{
+  content: "8 (906) 448 14 40 kasymovabz@mail.ru\A \A Специализация: Уголовное право, гражданское право, семейное право, военные споры";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person6{
+  background-image: url(../img/Заикин\ Леонид.PNG);
+  background-size: cover;
+  background-position: center;
+  font-size: 1.5rem !important;
+}
+
+.person6::before{
+  content: "8 (906) 765 55 50 leonid83_2016@mail.ru\A \A Специализация: Уголовное право";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person7{
+  background-image: url(../img/female-headshot-silhouette-12.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person7::before{
+  content: "8 (938) 777 14 91 saida.ramazanova.2019@mail.ru\A \A Специализация: Уголовное право";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person8{
+  background-image: url(../img/Хайбулаев\ Али-min.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+.person8::before{
+  content: "8 (906) 777 73 22 ali.khaybulaev92@mail.ru\A \A Специализация: Уголовное право";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person9{
+  background-image: url(../img/Рустамова\ Бикеханум-min.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+.person9::before{
+  content: "8 (960) 001 00 02 bika_rustamova@mail.ru\A \A Специализация: Уголовное право";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person10{
+  background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person10::before{
+  content: "8 (929) 869 72 27 advokat_3333@mail.ru\A \A Специализация: Уголовное право, экономические преступления";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person11{
+  background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person11::before{
+  content: "8 (960) 414 47 11 \A nkt-kaspioil@yandex.ru\A \A Специализация: Гражданское Право, семейное право, трудовые, земельные споры";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person12{
+  background-image: url(../img/Омаров-Раджаб-min.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.person12::before{
+  content: "8 (960) 416 69 26 radzhabomarob@mai.ru \A \A Специализация:Уголовное Право, гражданское Право, семейное право, трудовые, земельные споры";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person13{
+  background-image: url(../img/Абдурашидов\ Мурад-min.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+.person13::before{
+  content: "8 (938) 796 76 71 avto_lawyer@mai.ru \A \A Специализация:Уголовное право";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person14{
+  background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person14::before{
+  content: "8 (926) 580 10 73 nurmagomed1982@gmail.com \A \A Специализация:Гражданское право, банкротство, имущественные споры, защита интеллектуальных прав";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person15{
+  background-image: url(../img/Измаилов-Гаджимурад-min.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.person15::before{
+  content: "8 (928) 530 74 77 kakavkaz82@gmail.com \A \A Специализация:Уголовное право, защита по делам террористической направленности";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person16{
+  background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person16::before{
+  content: "8 (996) 420 21 34 advokat569@gmail.com \A \A Специализация: Гражданское право, уголовное право, семейное право, трудовые, земельные споры";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person17{
+  background-image: url(../img/female-headshot-silhouette-12.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person17::before{
+  content: "8 (960) 421 86 73 dmurzaewa@yandex.ru \A \A Специализация: Гражданское право, уголовное право, семейное право, трудовые, земельные споры";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person18{
+  background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person18::before{
+  content: "8 (963) 271 27 28 anix-gor@mail.ru \A \A Специализация: Гражданское право, уголовное право, семейное право, трудовые, земельные споры";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person19{
+  background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person19::before{
+  content: "8 (999) 311 55 20 nariman@shitbekov.ru \A Специализация: Гражданское право, уголовное право, административное право, арбитраж, представительство в органах государственной власти и иных организациях";
+  white-space: pre-wrap; /* or pre-wrap */
+  font-size: 14px !important;
+}
+
+.person20{
+  background-image: url(../img/Расулов\ Азамат.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.person20::before{
+  content: "8 (999) 311 55 20 nariman@shitbekov.ru \A Специализация: Гражданское право, уголовное право, административное право, арбитраж, представительство в органах государственной власти и иных организациях";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person21{
+  background-image: url(../img/Байрамов\ Шахин.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.person21::before{
+  content: "8 (977) 281 63 73 \A Специализация: Уголовоное право";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+
+.person22{
+  background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person22::before{
+  content: "8 (928) 937 66 40 radzhabomarov@mail.ru \A Специализация: Уголовоное право, гражданское право, семейное право, наследственное право, трудовые споры";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person23{
+  background-image: url(../img/-Р\ Р°СЃСѓР»-scaled-e1596971473109-min.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.person23::before{
+  content: "8 (988) 429 49 75 advokat.zaynalov@mail.ru \A Специализация: Уголовоное право, гражданское право, семейное право, дела об административных правонарушениях";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person24{
+  background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person24::before{
+  content: "8 (964) 011 02 03 gasanaliev1300@mail.ru \A Специализация: Уголовоное право, гражданское право";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person25{
+  background-image: url(../img/female-headshot-silhouette-12.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person25::before{
+  content: "8 (928) 509 99 07 1822@advokatrd.ru \A Специализация: Уголовоное право, гражданское право, семейное право, дела об административных правонарушениях";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person26{
+  background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person26::before{
+  content: "8 (989) 880 56 37 1821@advokatrd.ru \A Специализация: Уголовоное право, гражданское право, семейное право, дела об административных правонарушениях";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person27{
+  background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.person27::before{
+  content: "8 (988) 292 57 58 1823@advokatrd.ru \A Специализация: Уголовоное право, гражданское право, семейное право, дела об административных правонарушениях";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+.person28{
+  background-image: url(../img/Зайналов\ Гаджимурад.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.person28::before{
+  content: "8 (988) 429 49 75 advokat.zaynalov@mail.ru \A Специализация: гражданское право, уголовное право, семейное право, дела об административных правонарушениях";
+  white-space: pre-wrap; /* or pre-wrap */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.personalgrid-item::before{
+  position: absolute;
+  padding: 0 10px;
+  width: calc(100%-10px);
+  z-index: 2;
+  font-size: 1rem;
+  line-height: 40px;
+  text-align: left;
+  height: 0;
+  font-weight: 900;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  border-radius: 5px;
+  background-color: #8022fd;
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+
+.personalgrid-item:hover::before{
+  height: 100%;
+  opacity: 1;
+  transition: 0.3s all ease-in-out;
+}
+
+.personalgrid-item:active::before{
+  height: 100%;
+  opacity: 1;
+  transition: 0.3s all ease-in-out;
+}
+
+.personalgrid-item {
+  position: relative;
+  background-color: #8022fd;
+  color: #ffffff;
+  border-radius: 5px;
+  margin: 1rem;
+  padding-left: 1rem;
+  width: 150px;
+  padding-right: 8rem;
+  padding-top: 10rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 30px;
+  transition: 0.5s all ease-in-out;
+  box-shadow: 0px 5px 4px rgba(128, 34, 253, 0.22);
+}
+
+.services {
+  margin: 0 5%;
+  margin-top: 8rem;
+}
+
+.services h1 {
+  color: #8022fd;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.fizlitz{
+  color: #8022fd;
+  font-size: 2rem;
+  margin-top: 5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.servicesgrid-item {
+  background-color: #8022fd;
+  color: #fff;
+  padding: 1rem 1rem;
+  border-radius: 15px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  flex: 1;
+  box-shadow: 0px 5px 4px rgba(128, 34, 253, 0.22);
+}
+
+.servicesgrid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sgriditemtop {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.sgriditemtop h2 {
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.awards {
+  background-color: #8022fd;
+  color: #fff;
+  margin-top: 4rem;
+}
+
+.awards h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  margin: 0 5%;
+  padding-top: 2rem;
+}
+
+.awardsscroll img{
+  align-self: center;
+  flex: 1;
+  width: 400px;
+  margin-right: 5rem;
+}
+
+.cont{
+  flex-direction: column;
+}
+
+
+.cont .aboutusfl{
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  box-shadow: 0px 4px 4px #ffffff3a;
+}
+
+.cont .aboutustext{
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 10px;
+}
+
+
+
+.awardsscroll {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 4%;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.aboutustext hr {
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+}
+
+.aboutuscontacs {
+  display: flex;
+  justify-content: space-between;
+  line-height: 45px;
+}
+
+.contactsc {
+  text-align: right;
+  margin-top: 1rem;
+  margin-left: 3rem;
+    padding-bottom: 1rem;
+}
+
+.contactsc a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.reviews {
+  margin: 0 5%;
+  margin-top: 5rem;
+  
+}
+.reviews h1 {
+  color: #8022fd;
+  font-size: 4rem;
+}
+
+.cont{
+  margin: 5rem 5% !important;
+}
+
+.reviewsscroll {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.review-1 {
+  min-width: 40vw;
+  flex: 1;
+}
+
+.reviewtext {
+  background-color: #8022fd;
+  color: #fff;
+  border-radius: 20px;
+  border-bottom-left-radius: 0;
+  padding: 2rem;
+  font-size: 1.5rem;
+  margin-right: 3rem;
+  box-shadow: 0px 5px 4px rgba(128, 34, 253, 0.22);
+}
+
+.reviewname {
+  color: #8022fd;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+  }
+
+  nav {
+    padding: 1rem 1%;
+    overflow: scroll;
+    white-space: nowrap;
+    justify-content: space-between;
+  }
+
+  nav a {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 0 0.5rem;
+  }
+
+  .jumbo {
+    font-size: 1.5rem;
+    line-height: 40px;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+  }
+
+  .aboutus {
+    flex-direction: column;
+    margin: 4rem 5%;
+  }
+
+  .aboutusfl {
+    font-size: 1.2rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0px 4px 4px #ffffff3a;
+  }
+
+  .aboutusfl h1 {
+    font-weight: 900;
+  }
+
+  .aboutustext {
+    padding: 0 1rem;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .workrules {
+    box-shadow: 0px 5px 4px rgba(128, 34, 253, 0.22);
+  }
+
+  .aboutustext p {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .workrulesgrid {
+    flex-flow: column;
+    margin: 0;
+  }
+
+  .workrulesgrid-item {
+    margin: 0.5rem 2rem;
+    text-align: center;
+  }
+
+  .workrulesgrid-item p {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .bossestag {
+    margin: 0 2%;
+    font-size: 2rem;
+  }
+
+  .bio1 {
+    margin-top: 1rem;
+  }
+
+  .personal h1 {
+    margin: 0 5%;
+    font-size: 2rem;
+  }
+
+  .personalgrid {
+    flex-direction: column;
+    margin: 0 5%;
+    margin-top: 2rem;
+  }
+
+  .services {
+    margin: 0 3%;
+  }
+
+  .servicesgrid {
+    flex-direction: column;
+  }
+
+  .servicesgrid-item {
+    padding: 0.5rem;
+    border-radius: 15px;
+    margin-right: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .sgriditembottom {
+    font-size: 1.3rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .sgriditemtop {
+    margin-bottom: 0rem;
+    padding-left: 1rem;
+  }
+
+  .sgriditemtop svg {
+    background-color: #ffffff;
+    border-radius: 100%;
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+  }
+
+  .sgriditemtop h2 {
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
+  .aboutuscontacs {
+    flex-direction: column;
+  }
+
+  .contactsname {
+    text-align: center;
+  }
+  .contactsc {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .review-1 {
+    min-width: 100vw;
+  }
+
+  .reviewtext {
+    background-color: #8022fd;
+    color: #fff;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    padding: 2rem;
+    font-size: 1rem;
+    margin-right: 3rem;
+  }
+
+  .reviewname {
+    color: #333;
+    font-weight: 900;
+    font-size: 1.3rem;
+  }
+
+  .reviewcity {
+    color: #8022fd;
+    font-weight: 900;
+    font-size: 1.3rem;
+    margin-top: -20px;
+  }
+
+  .bossesbio {
+    flex-direction: column;
+  }
+
+  .bossesbio-photo {
+    background-color: #8022fd;
+    flex: 1;
+  }
+
+  .bossesbio-txt {
+    flex: 1;
+    background-color: #8022fd;
+    color: #fff;
+    padding-bottom: 3rem;
+    padding-left: 3%;
+  }
+}
+
+
+.prefooter{
+  background-color: #8022fd;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 5%;
+  margin-bottom: -1rem;
+}
+
+.prefooter h1{
+  font-weight: 900;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.prefooter iframe{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 2rem;
+}
+
+.prefooter p{
+  padding-bottom: 2rem;
+}
+
+  
+  
