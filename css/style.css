@@ -1,9 +1,12 @@
-body {
+html{
   scroll-behavior: smooth;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
 }
 
 nav {
@@ -25,12 +28,26 @@ nav a {
 
 .jumbo {
   background-color: #8022fd;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   color: #ffffff;
   text-align: center;
-  font-size: 2rem;
-  line-height: 30px;
-  padding-top: 30vh;
-  padding-bottom: 30vh;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+}
+
+
+.jumbo h1{
+  font-size: 4rem;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.jumbo h2{
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .jumboli{
@@ -278,9 +295,10 @@ nav a {
 .personalgrid {
   display: flex;
   justify-content: flex-start;
-  overflow-x: scroll;
-  overflow-x: auto !important;
+  overflow-x: auto;
+  overflow-y: hidden;
   margin-top: 2rem;
+  height: 350px;
 }
 
 .person1{
