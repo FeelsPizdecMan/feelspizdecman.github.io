@@ -1008,6 +1008,11 @@ nav a {
     padding: 0 0.5rem;
   }
 
+  .alwayson{
+    text-align: center;
+    margin: 0 3%;
+  }
+
   .jumbo {
     line-height: 40px;
     padding-top: 20vh;
