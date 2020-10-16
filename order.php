@@ -20,7 +20,7 @@
 			$mail_header.= "From: Тема <informer@$server>\r\n";
 			$mail_header.= "Reply-to: Reply to Name <reply@$server>\r\n";
 			
-			$to = "loke0720@gmail.com"; //заменить почту на свою
+			$to = "drka05@mail.ru"; //заменить почту на свою
 			$subject = "Заявка с сайта: $server";
 			
 			$message = "<strong>Имя:</strong> $name<br><strong>Телефон:</strong> $phone  $theme

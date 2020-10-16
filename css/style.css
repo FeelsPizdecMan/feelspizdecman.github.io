@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -6,50 +6,61 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
-  background-color: #f5f5f5;
+  background-color: #f1f1f1;
 }
 
 nav {
-  background-color: #8022fd;
-  padding: 1.5rem 10%;
+  padding: 1rem 5%;
   display: flex;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 nav a {
   color: #ffffff;
+  background-color: #8022fd;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: 0.3s all ease-in-out;
+}
+
+nav a:hover {
+  background-color: #8122fd86;
+  transition: 0.3s all ease-in-out;
+}
+
+nav a:active {
+  background-color: rgba(255, 255, 255, 0.575);
+  box-shadow: inset 0px 2px 2px #333333;
 }
 
 .jumbo {
-  background-color: #8022fd;
+  background-color: #f5f5f5;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   padding-top: 25vh;
-  padding-bottom: 25vh;
+  padding-bottom: 35vh;
+  background-image: url(../img/dylan-gillis-KdeqA3aTnBY-unsplash.jpg);
 }
 
 
-.jumbo h1{
-  font-size: 4rem;
-  font-style: italic;
+.jumbo h1 {
+  font-size: 6rem;
   font-weight: 900;
+  font-family: 'Playfair Display', serif;
 }
 
-.jumbo h2{
+.jumbo h2 {
   font-size: 5rem;
   font-weight: 900;
+  font-family: 'Playfair Display', serif;
 }
 
-.jumboli{
+.jumboli {
   display: flex;
   justify-content: space-around;
   margin: 2rem 2%;
@@ -57,12 +68,12 @@ nav a {
   text-align: center;
   font-weight: 700;
   font-size: 1rem;
-  background-color: #8022fd;
+  background: linear-gradient(145deg, #8924ff, #731fe4);
   color: #ffffff;
   border-radius: 20px;
 }
 
-.jumboli hr{
+.jumboli hr {
   border: 0.5px solid #ffffff91;
 }
 
@@ -89,19 +100,19 @@ nav a {
   box-shadow: 4px 0px 4px #ffffff3a, 0px 5px 4px rgba(128, 34, 253, 0.22);
 }
 
-.aboutusfl svg{
+.aboutusfl svg {
   margin-bottom: 10px;
 }
 
-.aboutusfl hr{
+.aboutusfl hr {
   border: 2px solid #8022fd;
   width: 100%;
 }
 
 .aboutustext {
-  background-color: #8022fd;
+  background: linear-gradient(145deg, #8924ff, #8022fd);
   color: #ffffff;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   box-shadow: 0px 5px 4px rgba(128, 34, 253, 0.22);
@@ -113,7 +124,7 @@ nav a {
 }
 
 .workrules {
-  background-color: #8022fd;
+  background: linear-gradient(145deg, #8924ff, #731fe4);
   color: #f9f9f9;
   margin: 0 2%;
   border-radius: 20px;
@@ -129,43 +140,79 @@ nav a {
 
 .workrulesgrid {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   margin: 0 2%;
   padding-bottom: 2rem;
   padding-top: 1rem;
 }
 
 
-.vigodi{
+.vigodi {
   margin: 0 2% !important;
 }
 
-.vigodi h1{
+.vigodi .timeimg {
+  background-image: url(../img/debby-hudson-GUUC719v9X8-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.22);
+}
+
+
+.vigodi .judgeimg {
+  background-image: url(../img/tingey-injury-law-firm-nSpj-Z12lX0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.22);
+}
+
+.vigodi .handimg {
+  background-image: url(../img/constantin-wenning-idDvA4jPBO8-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.22);
+}
+
+.vigodi .supportimg {
+  background-image: url(../img/julian-hochgesang-Dkn8-zPIbwo-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.22);
+}
+
+.vigodi h1 {
   text-align: center;
 }
 
-.vigodi .sgriditembottom{
+.vigodi .sgriditemtop h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.vigodi .sgriditembottom {
   margin-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 3rem;
   padding-bottom: 1rem;
 }
 
-.time{
+.time {
   flex-flow: column;
 }
 
-.time .aboutusfl{
+.time .aboutusfl {
   border-bottom-left-radius: 0;
   border-top-right-radius: 10px;
   box-shadow: 0px 4px 4px #ffffff3a;
 }
 
-.time .aboutustext{
+.time .aboutustext {
   border-top-right-radius: 0;
   border-bottom-left-radius: 10px;
 }
 
-.time .aboutustext p{
-  font-size: 1.2rem ;
+.time .aboutustext p {
+  font-size: 1.5rem;
 }
 
 .workrulesgrid-item h2 {
@@ -182,8 +229,8 @@ nav a {
 
 .workrulesgrid-item p {
   font-weight: 500;
-  padding: 0 1rem;
-  font-size: 1rem;
+  padding: 0 1.5rem;
+  font-size: 1.2rem;
 }
 
 .firstitemgrid {
@@ -193,7 +240,8 @@ nav a {
 .bossestag {
   color: #fff;
   border-radius: 30px;
-  background-color: #8022fd;
+  background: linear-gradient(145deg, #8924ff, #8022fd);
+  ;
   font-size: 3rem;
   text-align: center;
   padding: 0.5rem 0;
@@ -210,42 +258,47 @@ nav a {
 }
 
 
-.bio1 .bossesbio-photo{
+.bio1 .bossesbio-photo {
   background-image: url(../img/-Акиф-scaled-1-e1596967795250-min.jpg);
 }
 
-.bio2 .bossesbio-photo{
+.bio2 .bossesbio-photo {
   background-image: url(../img/-Гульнара-scaled-e1596975931593-min.jpg);
+}
+
+.bio2 .bossesbio-txt h1{
+  text-align: center;
 }
 
 .bossesbio-photo {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #8022fd;
   flex: 1.5;
 }
 
 .bossesbio-txt {
   flex: 1;
-  background-color: #8022fd;
+  background: linear-gradient(145deg, #8924ff, #8022fd);
+  ;
   color: #fff;
   padding-bottom: 3rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  font-family: 'Playfair Display', serif;
 }
 
 .bossesbio-txt h1 {
   font-size: 3rem;
   font-weight: 900;
   border-bottom: 3px solid #fff;
-  width: 80%;
+  width: 90%;
   padding-bottom: 1rem;
   transition: 0.5s ease-in-out all;
 }
 
 .bossesbio-txt h1:hover {
-  width: 90%;
+  width: 95%;
   transition: 0.5s all ease-in-out;
 }
 
@@ -254,9 +307,10 @@ nav a {
   font-weight: 700;
 }
 
-.bossesbio-txt p{
+.bossesbio-txt p {
   font-size: 1.5rem;
   font-weight: 500;
+  padding-right: 8rem;
 }
 
 .bio1 {
@@ -270,7 +324,7 @@ nav a {
 .personal h1 {
   color: #fff;
   border-radius: 30px;
-  background-color: #8022fd;
+  background: linear-gradient(145deg, #8924ff, #8022fd);
   font-size: 3rem;
   text-align: center;
   padding: 0.5rem 0;
@@ -287,318 +341,346 @@ nav a {
   height: 350px;
 }
 
-.person1{
+.person1 {
   background-image: url(../img/-Акиф-scaled-1-e1596967795250-min\ copy.jpg);
   background-size: cover;
   background-position: center;
   font-size: 2rem !important;
 }
 
-.person1::before{
+.person1::before {
   content: "8 (928) 052 99 80 beibutov@mail.ru \A \A Специализация: Гражданское право, уголовное право, семейное право, трудовые, земельные споры";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
 
-.person2{
+.person2 {
   background-image: url(../img/-Гульнара-scaled-e1596975931593-min\ copy.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.person2::before{
+.person2::before {
   content: "8(906)481 15 78 \A 88gulnar@mail.ru \A \A Специализация: Гражданское право, уголовное право, семейное право, трудовые, земельные споры";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person3{
+.person3 {
   background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
   background-size: cover;
   background-position: center;
 }
 
-.person3::before{
+.person3::before {
   content: "8(965) 490 66 66 djeffer595@mail.ru \A \A Специализация: Гражданское право, уголовное право, семейное право, трудовые, земельные споры";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person4{
+.person4 {
   background-image: url(../img/-Магомед-scaled-1-e1596975733749-min.jpg);
   background-size: cover;
   background-position: center;
   font-size: 2rem !important;
 }
 
-.person4::before{
+.person4::before {
   content: "8 (928) 937 66 40 maga0931972@gmail.com\A \A Специализация:Уголовное право, защита по уголовным делам террористической направленности, о наркотиках, семейное право";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person5{
+.person5 {
   background-image: url(../img/female-headshot-silhouette-12.png);
   background-size: cover;
   background-position: center;
 }
 
-.person5::before{
+.person5::before {
   content: "8 (906) 448 14 40 kasymovabz@mail.ru\A \A Специализация: Уголовное право, гражданское право, семейное право, военные споры";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person6{
+.person6 {
   background-image: url(../img/Заикин\ Леонид.PNG);
   background-size: cover;
   background-position: center;
   font-size: 1.5rem !important;
 }
 
-.person6::before{
+.person6::before {
   content: "8 (906) 765 55 50 leonid83_2016@mail.ru\A \A Специализация: Уголовное право";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person7{
+.person7 {
   background-image: url(../img/female-headshot-silhouette-12.png);
   background-size: cover;
   background-position: center;
 }
 
-.person7::before{
+.person7::before {
   content: "8 (938) 777 14 91 saida.ramazanova.2019@mail.ru\A \A Специализация: Уголовное право";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person8{
+.person8 {
   background-image: url(../img/Хайбулаев\ Али-min.JPG);
   background-size: cover;
   background-position: center;
 }
 
-.person8::before{
+.person8::before {
   content: "8 (906) 777 73 22 ali.khaybulaev92@mail.ru\A \A Специализация: Уголовное право";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person9{
+.person9 {
   background-image: url(../img/Рустамова\ Бикеханум-min.JPG);
   background-size: cover;
   background-position: center;
 }
 
-.person9::before{
+.person9::before {
   content: "8 (960) 001 00 02 bika_rustamova@mail.ru\A \A Специализация: Уголовное право";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person10{
+.person10 {
   background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
   background-size: cover;
   background-position: center;
 }
 
-.person10::before{
+.person10::before {
   content: "8 (929) 869 72 27 advokat_3333@mail.ru\A \A Специализация: Уголовное право, экономические преступления";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person11{
+.person11 {
   background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
   background-size: cover;
   background-position: center;
 }
 
-.person11::before{
+.person11::before {
   content: "8 (960) 414 47 11 \A nkt-kaspioil@yandex.ru\A \A Специализация: Гражданское Право, семейное право, трудовые, земельные споры";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person12{
+.person12 {
   background-image: url(../img/Омаров-Раджаб-min.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.person12::before{
+.person12::before {
   content: "8 (960) 416 69 26 radzhabomarob@mai.ru \A \A Специализация:Уголовное Право, гражданское Право, семейное право, трудовые, земельные споры";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person13{
+.person13 {
   background-image: url(../img/Абдурашидов\ Мурад-min.JPG);
   background-size: cover;
   background-position: center;
 }
 
-.person13::before{
+.person13::before {
   content: "8 (938) 796 76 71 avto_lawyer@mai.ru \A \A Специализация:Уголовное право";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person14{
+.person14 {
   background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
   background-size: cover;
   background-position: center;
 }
 
-.person14::before{
+.person14::before {
   content: "8 (926) 580 10 73 nurmagomed1982@gmail.com \A \A Специализация:Гражданское право, банкротство, имущественные споры, защита интеллектуальных прав";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person15{
+.person15 {
   background-image: url(../img/Измаилов-Гаджимурад-min.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.person15::before{
+.person15::before {
   content: "8 (928) 530 74 77 kakavkaz82@gmail.com \A \A Специализация:Уголовное право, защита по делам террористической направленности";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person16{
+.person16 {
   background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
   background-size: cover;
   background-position: center;
 }
 
-.person16::before{
+.person16::before {
   content: "8 (996) 420 21 34 advokat569@gmail.com \A \A Специализация: Гражданское право, уголовное право, семейное право, трудовые, земельные споры";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person17{
+.person17 {
   background-image: url(../img/female-headshot-silhouette-12.png);
   background-size: cover;
   background-position: center;
 }
 
-.person17::before{
+.person17::before {
   content: "8 (960) 421 86 73 dmurzaewa@yandex.ru \A \A Специализация: Гражданское право, уголовное право, семейное право, трудовые, земельные споры";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person18{
+.person18 {
   background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
   background-size: cover;
   background-position: center;
 }
 
-.person18::before{
+.person18::before {
   content: "8 (963) 271 27 28 anix-gor@mail.ru \A \A Специализация: Гражданское право, уголовное право, семейное право, трудовые, земельные споры";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person19{
+.person19 {
   background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
   background-size: cover;
   background-position: center;
 }
 
-.person19::before{
+.person19::before {
   content: "8 (999) 311 55 20 nariman@shitbekov.ru \A Специализация: Гражданское право, уголовное право, административное право, арбитраж, представительство в органах государственной власти и иных организациях";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
   font-size: 14px !important;
 }
 
-.person20{
+.person20 {
   background-image: url(../img/Расулов\ Азамат.jpeg);
   background-size: cover;
   background-position: center;
 }
 
-.person20::before{
+.person20::before {
   content: "8 (999) 311 55 20 nariman@shitbekov.ru \A Специализация: Гражданское право, уголовное право, административное право, арбитраж, представительство в органах государственной власти и иных организациях";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person21{
+.person21 {
   background-image: url(../img/Байрамов\ Шахин.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.person21::before{
+.person21::before {
   content: "8 (977) 281 63 73 \A Специализация: Уголовоное право";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
 
-.person22{
+.person22 {
   background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
   background-size: cover;
   background-position: center;
 }
 
-.person22::before{
+.person22::before {
   content: "8 (928) 937 66 40 radzhabomarov@mail.ru \A Специализация: Уголовоное право, гражданское право, семейное право, наследственное право, трудовые споры";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person23{
+.person23 {
   background-image: url(../img/-Р\ Р°СЃСѓР»-scaled-e1596971473109-min.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.person23::before{
+.person23::before {
   content: "8 (988) 429 49 75 advokat.zaynalov@mail.ru \A Специализация: Уголовоное право, гражданское право, семейное право, дела об административных правонарушениях";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person24{
+.person24 {
   background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
   background-size: cover;
   background-position: center;
 }
 
-.person24::before{
+.person24::before {
   content: "8 (964) 011 02 03 gasanaliev1300@mail.ru \A Специализация: Уголовоное право, гражданское право";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person25{
+.person25 {
   background-image: url(../img/female-headshot-silhouette-12.png);
   background-size: cover;
   background-position: center;
 }
 
-.person25::before{
+.person25::before {
   content: "8 (928) 509 99 07 1822@advokatrd.ru \A Специализация: Уголовоное право, гражданское право, семейное право, дела об административных правонарушениях";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person26{
+.person26 {
   background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
   background-size: cover;
   background-position: center;
 }
 
-.person26::before{
+.person26::before {
   content: "8 (989) 880 56 37 1821@advokatrd.ru \A Специализация: Уголовоное право, гражданское право, семейное право, дела об административных правонарушениях";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person27{
+.person27 {
   background-image: url(../img/48ca73f695904875a86327d1470f4ecc_silhouette-headshot-at-getdrawings-free-download_1080-1080.png);
   background-size: cover;
   background-position: center;
 }
 
-.person27::before{
+.person27::before {
   content: "8 (988) 292 57 58 1823@advokatrd.ru \A Специализация: Уголовоное право, гражданское право, семейное право, дела об административных правонарушениях";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
-.person28{
+.person28 {
   background-image: url(../img/Зайналов\ Гаджимурад.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.person28::before{
+.person28::before {
   content: "8 (988) 429 49 75 advokat.zaynalov@mail.ru \A Специализация: гражданское право, уголовное право, семейное право, дела об административных правонарушениях";
-  white-space: pre-wrap; /* or pre-wrap */
+  white-space: pre-wrap;
+  /* or pre-wrap */
 }
 
 
@@ -612,7 +694,7 @@ nav a {
 
 
 
-.personalgrid-item::before{
+.personalgrid-item::before {
   position: absolute;
   padding: 0 10px;
   width: calc(100%-10px);
@@ -631,13 +713,13 @@ nav a {
   transition: 0.3s all ease-in-out;
 }
 
-.personalgrid-item:hover::before{
+.personalgrid-item:hover::before {
   height: 100%;
   opacity: 1;
   transition: 0.3s all ease-in-out;
 }
 
-.personalgrid-item:active::before{
+.personalgrid-item:active::before {
   height: 100%;
   opacity: 1;
   transition: 0.3s all ease-in-out;
@@ -650,7 +732,8 @@ nav a {
   border-radius: 5px;
   margin: 1rem;
   padding-left: 1rem;
-  width: 150px;
+  width: 200px;
+  height: 200px;
   padding-right: 8rem;
   padding-top: 10rem;
   margin-bottom: 2rem;
@@ -663,16 +746,17 @@ nav a {
 
 .services {
   margin: 0 5%;
-  margin-top: 8rem;
+  margin-top: 12rem;
 }
 
 .services h1 {
   color: #8022fd;
-  font-size: 4rem;
+  font-size: 5rem;
+  text-align: center;
   font-weight: 900;
 }
 
-.fizlitz{
+.fizlitz {
   color: #8022fd;
   font-size: 2rem;
   margin-top: 5rem;
@@ -681,14 +765,19 @@ nav a {
 }
 
 .servicesgrid-item {
-  background-color: #8022fd;
+  background: linear-gradient(145deg, #8924ff, #731fe4);
   color: #fff;
   padding: 1rem 1rem;
   border-radius: 15px;
   margin-right: 1rem;
   margin-bottom: 1rem;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: 0px 5px 4px rgba(128, 34, 253, 0.22);
+
 }
 
 
@@ -712,7 +801,7 @@ nav a {
 }
 
 .awards {
-  background-color: #8022fd;
+  background: linear-gradient(145deg, #8924ff, #8022fd);
   color: #fff;
   margin-top: 4rem;
 }
@@ -724,7 +813,7 @@ nav a {
   padding-top: 2rem;
 }
 
-.awardsscroll img{
+.awardsscroll img {
   align-self: center;
   flex: 1;
   width: 400px;
@@ -739,25 +828,37 @@ nav a {
   padding-bottom: 2rem;
 }
 
-.cont{
+.cont {
   flex-direction: column;
 }
 
 
-.cont .aboutusfl{
+.cont .aboutusfl {
   border-bottom-left-radius: 0;
   border-top-right-radius: 10px;
   box-shadow: 0px 4px 4px #ffffff3a;
 }
 
-.cont .aboutustext{
+.cont .aboutustext {
   border-top-right-radius: 0;
   border-bottom-left-radius: 10px;
 }
 
+#about .aboutustext {
+  background-image: url(../img/drew-beamer-Se7vVKzYxTI-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 0 3rem;
+}
 
+#about {
+  margin: 2rem 5%;
+}
 
-
+#about .aboutustext p {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
 
 .aboutustext hr {
   border: 3px solid #ffffff;
@@ -774,7 +875,7 @@ nav a {
   text-align: right;
   margin-top: 1rem;
   margin-left: 3rem;
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .contactsc a {
@@ -787,14 +888,15 @@ nav a {
 .reviews {
   margin: 0 5%;
   margin-top: 5rem;
-  
+
 }
+
 .reviews h1 {
   color: #8022fd;
   font-size: 4rem;
 }
 
-.cont{
+.cont {
   margin: 5rem 5% !important;
 }
 
@@ -810,7 +912,7 @@ nav a {
 }
 
 .reviewtext {
-  background-color: #8022fd;
+  background: linear-gradient(145deg, #8924ff, #8022fd);
   color: #fff;
   border-radius: 20px;
   border-bottom-left-radius: 0;
@@ -827,39 +929,39 @@ nav a {
 }
 
 
-.prefooter{
-  background-color: #8022fd;
+.prefooter {
+  background: linear-gradient(145deg, #8924ff, #8022fd);
   color: #ffffff;
   text-align: center;
   padding: 0 5%;
   margin-bottom: -1rem;
 }
 
-.prefooter h1{
+.prefooter h1 {
   font-weight: 900;
   font-size: 2rem;
   padding-top: 2rem;
 }
 
-.prefooter iframe{
+.prefooter iframe {
   width: 100%;
   height: 500px;
   margin-bottom: 2rem;
 }
 
-.prefooter p{
+.prefooter p {
   padding-bottom: 5rem;
 }
 
 
-.alwayson{
+.alwayson {
   position: fixed;
   bottom: 20px;
   right: 2%;
-  background-color: #fff;
+  background-color: #8122fdb2;
   border: none;
   text-decoration: none;
-  color: #8022fd;
+  color: #fff;
   padding: 1rem 2rem;
   font-size: 1.5rem;
   font-weight: 900;
@@ -869,35 +971,39 @@ nav a {
   z-index: 3;
 }
 
-.alwayson:hover{
+.alwayson:hover {
   background-color: #c497ff;
   transition: 0.3s all ease-in-out;
   cursor: pointer;
 }
 
-.consult{
-  background-color: #8022fd;
+.consult {
+  background: linear-gradient(145deg, #8924ff, #8022fd);
   color: #fff;
   margin: 5rem 15%;
   display: flex;
   flex-direction: column;
   text-align: center;
   border-radius: 20px;
+  background-image: url(../img/marten-bjork-6dW3xyQvcYE-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-.consultinput{
+.consultinput {
   display: flex;
   justify-content: space-between;
   padding: 2rem 3rem;
 }
 
 
-.consultfl h1{
+.consultfl h1 {
   font-weight: 900;
   font-size: 4rem;
+  font-family: 'Playfair Display', serif;
 }
 
-.consultinput input{
+.consultinput input {
   width: 100%;
   border-radius: 5px;
   height: 50px;
@@ -910,11 +1016,11 @@ nav a {
 }
 
 
-.consultinput input:focus{
+.consultinput input:focus {
   outline: none;
 }
 
-.consultinput input::placeholder{
+.consultinput input::placeholder {
   text-align: center;
   font-size: 2rem !important;
   font-weight: 900;
@@ -922,15 +1028,15 @@ nav a {
 }
 
 
-.consult .name{
+.consult .name {
   flex: 1;
 }
 
-.consult .tel{
+.consult .tel {
   flex: 1;
 }
 
-.consultinput .submit{
+.consultinput .submit {
   flex: 0.5;
   font-size: 2rem !important;
   font-weight: 900;
@@ -943,15 +1049,20 @@ nav a {
   background-color: #fff;
 }
 
+.consultinput .submit:hover {
+  cursor: pointer;
+  background-color: rgb(238, 238, 238);
+}
 
-.containerforb{
+
+.containerforb {
   display: flex;
   justify-content: center;
 }
 
 
-.buttonto{
-  background-color: #8022fd;
+.buttonto {
+  background: linear-gradient(145deg, #8924ff, #8022fd);
   color: #ffffff;
   font-size: 2.5rem;
   padding: 1rem 2rem;
@@ -964,12 +1075,12 @@ nav a {
   transition: 0.2s all ease-in-out;
 }
 
-.buttonto:hover{
+.buttonto:hover {
   background-color: #b175ff;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
 }
-  
+
 
 
 
@@ -995,7 +1106,7 @@ nav a {
     padding: 0 0.5rem;
   }
 
-  .alwayson{
+  .alwayson {
     text-align: center;
     margin: 0 2%;
     padding: 0.5rem;
@@ -1007,11 +1118,11 @@ nav a {
     padding-bottom: 20vh;
   }
 
-  .jumbo h1{
+  .jumbo h1 {
     font-size: 2rem;
   }
 
-  .jumbo h2{
+  .jumbo h2 {
     font-size: 2rem;
   }
 
@@ -1020,52 +1131,52 @@ nav a {
     margin: 4rem 5%;
   }
 
-  .jumboli{
+  .jumboli {
     flex-direction: column;
     text-align: left;
     font-size: 1.5rem;
     margin: 2rem 3%;
   }
 
-  .awardsscroll{
+  .awardsscroll {
     flex-direction: row;
     overflow-x: scroll;
   }
 
-  .awardsscroll img{
+  .awardsscroll img {
     width: 300px;
     margin-right: 0;
     padding-right: 1.5rem;
     margin-bottom: 1rem;
   }
 
-  .consult{
+  .consult {
     margin: 5rem 3%;
   }
 
-  .consultfl h1{
+  .consultfl h1 {
     font-size: 2rem;
     padding: 0 1rem;
   }
 
 
-  .consultinput{
+  .consultinput {
     flex-direction: column;
     padding: 2rem 1rem;
     padding-top: 1rem;
   }
 
-  .consultinput input{
+  .consultinput input {
     width: 92%;
     height: 60px;
     margin-bottom: 1rem;
   }
 
-  .consultinput input::placeholder{
+  .consultinput input::placeholder {
     font-size: 1.5rem !important;
   }
 
-  
+
   .aboutusfl {
     font-size: 1.2rem;
     border-top-right-radius: 10px;
@@ -1108,7 +1219,7 @@ nav a {
     padding: 0 0.9rem;
   }
 
-  .buttonto{
+  .buttonto {
     margin: 0 5%;
     margin-top: 1rem;
   }
@@ -1136,7 +1247,7 @@ nav a {
     margin-top: 2rem;
   }
 
- /* Проблема в Reviews и Awards */
+  /* Проблема в Reviews и Awards */
 
   .services {
     margin: 0 3%;
@@ -1188,6 +1299,7 @@ nav a {
   .contactsname {
     text-align: center;
   }
+
   .contactsc {
     text-align: center;
     margin-left: 0;
@@ -1221,15 +1333,15 @@ nav a {
     padding-left: 3%;
   }
 
-  .bossesbio-txt h1{
+  .bossesbio-txt h1 {
     font-size: 2rem;
   }
 
-  .bossesbio-txt h2{
+  .bossesbio-txt h2 {
     font-size: 1rem;
   }
 
-  .bossesbio-txt p{
+  .bossesbio-txt p {
     font-size: 1rem;
   }
 
