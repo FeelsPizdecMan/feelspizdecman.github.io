@@ -1,37 +1,3 @@
 User-agent: *
-Disallow: /cart
-Disallow: /pay/
-Disallow: /user/
-Disallow: /auth
-Disallow: /*?tag
-Disallow: /search
-Disallow: /*sort
-Disallow: /*?ref
-Disallow: /*esh=
-Disallow: /*s=
-Disallow: /*page=
-Disallow: /*eshelon=
-Disallow: /vk$
-Disallow: /fb$
-Disallow: /?
-Disallow: /showcase?shopSet=f24eu_us
-Disallow: /showcase?shopSet=all
-Disallow: /showcase?shopset=all
-Disallow: /showcase?shopSet=f24eu_stock
-Disallow: /showcase?shopSet=f24eu_etf
-
-Disallow: /landings/IPO-1-0-0EN/index.html
-Disallow: /landings/IPO-1-1-0EN/index.html
-Disallow: /landings/IPO-1-0-0DE/index.html
-Disallow: /landings/IPO-1-1-0DE/index.html
-Disallow: /landings/BRND-1-0-0EN/index.html
-Disallow: /landings/BRND-1-0-0DE/index.html
-
-
-Allow: /*.css
-Allow: /*.js
-Allow: /*.jpg
-Allow: /*.png
-Allow: /*.gif
-Allow: /*.svg
-Sitemap: https://en.freedom24.com/en.sitemap.xml
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
