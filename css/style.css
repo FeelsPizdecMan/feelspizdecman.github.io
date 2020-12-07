@@ -804,8 +804,7 @@ body a{
 
 .rights{
     background-color: var(--slight-accent-color);
-    padding: 0.5rem 2rem;
-    padding-top: 0;
+    text-align: center;
     margin-top: 0;
     font-weight: 700;
     font-size: 1rem;
