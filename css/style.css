@@ -472,7 +472,7 @@ body a{
 .grid-block{
     width: 10vw;
     z-index: 1;
-    height: 86vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -780,6 +780,37 @@ body a{
     transition: 0.5s all ease-in-out;
 }
 
+.footer{
+    background-color: var(--slight-accent-color);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    line-height: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem 0rem;
+    margin-top: 2rem;
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col a:hover{color: #ffffff88;}
+
+.footer-col .deadlink:hover{color: #ffffff;}
+
+.rights{
+    background-color: var(--slight-accent-color);
+    padding: 0.5rem 2rem;
+    padding-top: 0;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 
 @media screen and (max-width: 600px) {
     .navbar .menu .dropdown{
@@ -824,11 +855,13 @@ body a{
 
     .jumbo-img{
         margin-top: 0;
-        margin-right: -10rem;
+        margin-right: 0;
     }
 
     .jumbo-img img{
-        height: 200px;
+        height: 300px;
+        margin-top:0;
+        margin-left: 0;
     }
 
     .history{
@@ -987,4 +1020,79 @@ body a{
         width: 90vw;
         height: auto;
     }
+
+
+    .pups p{
+        margin-right: 30px;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .pups p a{
+        color: var(--slight-accent-color);
+    }
+
+    .pupsgallery{
+        margin-right: 0;
+        margin-top: 5rem;
+    }
+
+    .matinggrid .grid-block{
+        width: 80vw;
+        z-index: 1;
+        height: 86vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+        position: relative;
+        transition: 0.5s all ease-in-out;
+    }
+
+    .matinggrid .grid-block h1{
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    .matinggrid .grid-block:hover{
+        width: 80vw;
+        transition: 0.5s all ease-in-out;
+    }
+
+    .footer{
+        background-color: var(--slight-accent-color);
+        color: #ffffff;
+        display: flex;
+        flex-wrap: wrap;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        line-height: 40px;
+        font-weight: 700;
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
+    
+    .footer-col{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-col a:hover{color: #ffffff88;}
+    
+    .footer-col .deadlink:hover{color: #ffffff;}
+    
+    .rights{
+        background-color: var(--slight-accent-color);
+        padding: 1rem 2rem;
+        padding-top: 1rem;
+        margin-top: -5px;
+        margin-bottom: -20px;
+        font-weight: 700;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
 }
