@@ -1,0 +1,990 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --accent-color:#FFFFCC;
+    --bg-color:#3B3B3B;
+    --slight-accent-color:#a58749;
+}
+
+::-webkit-scrollbar{
+    height: 0px;
+    width: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    ::-webkit-scrollbar{
+        height: 0;
+        width: 0;
+    }
+}
+
+
+::-webkit-scrollbar-track {
+    background:transparent; 
+    transition: 0.2s all ease-in-out;
+  }
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--slight-accent-color); 
+    transition: 0.2s all ease-in-out;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color); 
+    transition: 0.2s all ease-in-out;
+}
+
+body{
+    margin: 0;
+    background-color: #1C1C1C;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height:97%;
+    padding: 1rem;
+}
+
+.navbar .menu button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .menu svg{
+    fill: var(--slight-accent-color);
+    transition: 0.2s all ease-in-out;
+}
+
+.navbar .menu svg:hover{
+    fill: var(--accent-color);
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.logo{
+    position: absolute;
+}
+
+
+
+.navbar .menu .dropdown{
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    padding-top: 3.5rem;
+    width: 19vw;
+    transform: translateX(-500px);
+    transition: 0.5s all ease-in-out;
+    background-color: var(--bg-color);
+}
+
+.dropdown a{
+    color: var(--slight-accent-color);
+    padding: 1rem;
+    text-align: left;
+    font-weight: 900;
+    font-size: 1.4rem;
+    transition: 0.2s all ease-in-out;
+}
+
+.dropdown a:hover{
+    color: var(--accent-color);
+    transition: 0.2s all ease-in-out;
+}
+
+.navbar .bottomMenu{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar .bottomMenu a{
+    margin: 0.5rem 0;
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--slight-accent-color);
+}
+
+.navbar .bottomMenu a:hover{
+    color: var(--accent-color);
+}
+
+
+.navbar .bottomMenu svg{
+    fill: var(--slight-accent-color);
+}
+
+.navbar .bottomMenu svg:hover{
+    fill: var(--accent-color);
+}
+
+
+.main{
+    margin-left: 75px;
+}
+
+.jumbo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.jumbo h1{
+    color: var(--accent-color);
+    font-weight: 900;
+    font-size: 7rem;
+    line-height: 170px;
+    margin-bottom: 0;
+}
+
+.jumbo p{
+    font-weight: 600;
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+.jumbo-text{
+    flex: 1;
+}
+
+.jumbo-img{
+    background-color: var(--bg-color);
+    border-radius: 80%;
+    flex: 1;
+    display: flex;
+    margin-right: -25rem;
+    margin-top: -5rem;
+
+}
+
+.jumbo-img img{
+    height: 600px;
+    margin-top: 10rem;
+    margin-left: -10rem;
+}
+
+.history{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+}
+
+
+.history-text h1{
+    font-size: 5rem;
+    color: var(--accent-color);
+    font-weight: 900;
+    margin-top: 0;
+}
+
+.history-text p{
+    font-size: 1.5rem;
+    width: 600px;
+}
+
+.history-img{
+    display: flex;
+    flex-direction: column;
+}
+
+.history-img img{
+    width: 650px;
+    margin-bottom: 1rem;
+    height: auto;
+}
+
+.youtube-videe{
+    margin-right: 75px !important;
+    margin-top: 7rem;
+}
+
+.youtube-videe iframe{
+    width: 100%;
+    height: 700px;
+}
+
+.ourdogs{
+    margin-top: 7rem;
+}
+
+.ourdogs h1{
+    color: var(--accent-color);
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.ourdogcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 75px;
+}
+
+.ourdogcard-text{
+    flex: 1;
+    position: relative;
+    width: 50%;
+    color: #ffffff;
+    background-color: var(--bg-color);
+}
+
+.ourdogcardleft{
+    flex: 1;
+    position: relative;
+    width: 50%;
+    color: #ffffff;
+    background-color: var(--bg-color);
+}
+
+.ourdogcardleft::after{
+    content: "";
+    position:absolute;
+    top: 50%;
+    right: 100%;
+    margin-right: -20px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid var(--bg-color) !important;
+    transform:rotate(-90deg);
+}
+
+
+.ourdogcardleft h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 0;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.ourdogcardleft p{
+    width: 90%;
+    font-size: 1.3rem;
+    padding: 2rem;
+    padding-top: 0;
+}
+
+
+.ourdogcard-text::after {
+    content: "";
+    position:absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: -20px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid var(--bg-color);
+    transform:rotate(90deg);
+}
+
+
+
+.ourdogcard-text h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 0;
+    padding: 2rem;
+}
+
+.ourdogcard-text p{
+    width: 90%;
+    font-size: 1.3rem;
+    padding: 2rem;
+}
+
+.ourdogcard-img{
+    flex: 1;
+    width: 50%;
+}
+
+.ourdogcard-img img{
+    background-color: tan;
+    width: 100%;
+    height: 100%;
+}
+
+
+.about-img img{
+    width: 600px;
+}
+
+.history-text .links{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text p{
+    width: 650px;
+}
+
+.history-text a{
+    background-color: var(--slight-accent-color);
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.history-text a:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s all ease-in-out;
+    color: #ffffff;
+}
+
+.history-text button{
+    background-color: var(--slight-accent-color);
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    transition: 0.2s all ease-in-out;
+}
+
+.history-text button svg{
+    fill: #ffffff;
+}
+
+.history-text button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s all ease-in-out;
+}
+
+
+.history-text iframe{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.history-text .callback{
+    background-color: var(--bg-color);
+    margin-top: -2rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2px;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+    justify-content: center;
+}
+
+.history-text .callback input{
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 3px solid #ffffff;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.history-text .callback .firstinput{
+    margin-top: 2rem;
+}
+
+.history-text .callback input::placeholder{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.history-text .callback button{
+    font-weight: 600;
+    background-color: rgba(85, 85, 85, 0.624);
+    margin-bottom: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.history-text .sociallinks{
+    margin-top: 2rem;
+}
+
+.history-text .sociallinks  a,svg{
+    background-color: transparent;
+    fill: var(--slight-accent-color);
+    margin-left: 0;
+}
+
+
+/* Our Dogs */ 
+
+.ourdogsh1{
+    position: absolute;
+    left: 75px;
+    font-weight: 900;
+    top: 15px;
+    color: var(--slight-accent-color);
+    margin-top: 0;
+}
+
+.grid{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.grid-block{
+    width: 10vw;
+    z-index: 1;
+    height: 86vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    position: relative;
+    transition: 0.5s all ease-in-out;
+}
+
+.grid-block h1{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.grid-block:hover{
+    width: 15vw;
+    transition: 0.5s all ease-in-out;
+}
+
+.major{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/about2.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.major::after{
+    content: "Американский Булли";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 700;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zlata{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/about3.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+.zlata::after{
+    content: "Американский Булли";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 700;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.best{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Beast3.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+.best::after{
+    content: "Кане Корсо";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 700;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zhana{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/1.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+.zhana::after{
+    content: "Американский Булли";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 700;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cruch{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/about3.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+.cruch::after{
+    content: "Американский Булли";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--bg-color);
+    transform: scaleX(10vw);
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 700;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gana{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/3.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+.gana::after{
+    content: "Американский Булли";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 700;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zina{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/am_bull.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+.zina::after{
+    content: "Американский Булли";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 700;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avi{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Beast5.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+.avi::after{
+    content: "Кане Корсо";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 700;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alabama{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/about2.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+.alabama::after{
+    content: "Американский Булли";
+    position: absolute;
+    bottom: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 700;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* dogs stats */
+
+.dogstats{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.dogstats-text{
+    padding-left: 2rem;
+}
+
+.dogstats-text .littlered{
+    margin-bottom: 0;
+    color: var(--accent-color);
+    font-weight: 900;
+}
+
+.dogstats-text h3{
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin: 1rem 0;
+}
+
+.dogstats-text h4{
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.dogstats-text hr{
+    border: 1px solid var(--accent-color);
+    margin: 1rem 0;
+    margin-right: 15%;
+}
+
+.dogstats-text h1{
+    font-weight: 900;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.dogstats-text p{
+    font-size: 1.2rem;
+    margin-right: 15%;
+}
+
+.dogstats-text a, svg{
+    color: var(--accent-color);
+    fill: var(--accent-color);
+    transition: 0.2s all ease-in-out;
+}
+
+
+.dogstats-text svg:hover, a:hover{
+    color: var(--slight-accent-color);
+    fill: var(--slight-accent-color);
+    transition: 0.2s all ease-in-out;
+}
+
+
+.dogstats-text .price{
+    font-size: 5rem;
+    margin-top: 1.9rem;
+    color: var(--accent-color);
+}
+
+.dogstats-images{
+    display: flex;
+    height: 100vh;
+    margin-right: 4rem;
+}
+
+.dogstats-images img{
+    width: 600px;
+    height: auto;
+}
+
+.pups p{
+    margin-right: 75px;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.pups p a{
+    color: var(--slight-accent-color);
+}
+
+.pupsgallery{
+    margin-right: 70px;
+    margin-top: 5rem;
+}
+
+.matinggrid .grid-block{
+    width: 30vw;
+    z-index: 1;
+    height: 86vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    position: relative;
+    transition: 0.5s all ease-in-out;
+}
+
+.matinggrid .grid-block h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.matinggrid .grid-block:hover{
+    width: 35vw;
+    transition: 0.5s all ease-in-out;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar .menu .dropdown{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: 100%;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        padding-top: 4rem;
+        z-index: -2;
+        transform: translateX(-500px);
+        transition: 0.5s all ease-in-out;
+    }
+    
+    .dropdown a{
+        color: var(--accent-color);
+        padding: 1rem;
+        text-align: center;
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+
+    .main{
+        margin-left: 75px;
+    }
+
+    .jumbo{
+        flex-direction: column;
+    }
+
+    .jumbo h1{
+        font-size: 3rem;
+        line-height: 60px;
+    }
+
+    .jumbo p{
+        width: 95%;
+        font-size: 1.3rem;
+    }
+
+    .jumbo-img{
+        margin-top: 0;
+        margin-right: -10rem;
+    }
+
+    .jumbo-img img{
+        height: 200px;
+    }
+
+    .history{
+        flex-direction: column;
+    }
+
+    .history-text h1{
+        font-size: 3rem;
+    }
+
+    .history-text p{
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .history-img img{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .youtube-videe{
+        height: 200px;
+        width: 100%;
+        margin-top: 0.2rem;
+        margin-bottom: 5rem;
+    }
+
+    .youtube-videe iframe{
+        width: 100%;
+        height: 200px;
+    }
+
+    .ourdogs{
+        margin-top: 5rem;
+    }
+
+    .ourdogs h1{
+        font-size: 2.5rem;
+    }
+
+    .ourdogcard{
+        flex-direction: column-reverse;
+        margin-right: 0;
+    }
+
+    
+
+    .ourdogcard-text{
+        width: 100%;
+    }
+    
+    .ourdogcardleft{
+        width: 100%;
+    }
+
+    .reverse-column{
+        flex-direction: column;
+    }
+
+    .ourdogcard-text h2{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .ourdogcard-text p{
+        width: 80%;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .ourdogcardleft h2{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .ourdogcardleft p{
+        width: 80%;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+
+    .ourdogcard-img{
+        width: 100%;
+        margin-bottom: -10px;
+    }
+
+
+    .ourdogcard-text::after {
+        content: none;
+        top: 0;
+        right: 0;
+        margin-right: 0;
+    }
+
+    .ourdogcardleft::after{
+        content: none;
+        top: 0;
+        left: 0;
+        margin-left: 0;
+    }    
+
+    .aboutus{
+        flex-direction: column-reverse;
+        margin-top: 3rem;
+    }
+
+    .history-text a{
+        font-size: 1rem;
+    }
+
+    .history-text button{
+        font-size: 1rem;
+    }
+
+    .history-text .callback input{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .history-text .callback input::placeholder{
+        font-size: 1rem;
+    }
+
+    .grid{
+        margin-top: 5rem;
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .grid-block{
+        width: 80vw;
+    }
+
+    .grid-block:hover{
+        width: 80vw;
+    }
+
+    .dogstats{
+        height: auto;
+        flex-direction: column-reverse;
+        overflow: auto;
+    }
+
+    .dogstats-text{
+        padding-left: 0rem;
+    }
+
+    .dogstats-images{
+        display: flex;
+        height: auto;
+        margin-right: 0;
+    }
+    
+    .dogstats-images img{
+        width: 90vw;
+        height: auto;
+    }
+}
