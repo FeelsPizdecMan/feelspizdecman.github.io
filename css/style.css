@@ -463,26 +463,52 @@ body a{
 }
 
 .grid{
-    margin-top: 4rem;
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
 }
 
+
+.ourdogsclass{
+    margin-top: 1rem;
+    font-weight: 900;
+    color: var(--accent-color);
+}
+
+
 .grid-block{
-    width: 10vw;
+    width: 11.5vw;
     z-index: 1;
-    height: 90vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin-bottom: 3rem;
     position: relative;
     transition: 0.5s all ease-in-out;
 }
 
+.italiangrid .grid-block{
+    width: 13.1vw;
+}
+
+.frenchgrid .grid-block{
+    width: 90vw;
+}
+
+.frenchgrid .grid-block h1{
+    font-size: 3rem;
+}
+
+.frenchgrid .grid-block:hover{
+    width: 90vw;
+    transition: 0.5s all ease-in-out;
+}
+
 .grid-block h1{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    padding: 0 5px;
     font-weight: 900;
 }
 
@@ -491,178 +517,152 @@ body a{
     transition: 0.5s all ease-in-out;
 }
 
-.major{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/about2.jpg);
+.Ivy{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Ivy\ of\ DSB2.jpeg);
     background-position: center top;
     background-size: cover;
 }
 
-.major::after{
-    content: "Американский Булли";
-    position: absolute;
-    bottom: 0;
-    background-color: var(--bg-color);
-    width: 100%;
-    opacity: 0.7;
-    text-align: center;
-    font-weight: 700;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.zlata{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/about3.jpeg);
+
+.BPK{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/BPK3.jpeg);
     background-position: center top;
     background-size: cover;
 }
-.zlata::after{
-    content: "Американский Булли";
-    position: absolute;
-    bottom: 0;
-    background-color: var(--bg-color);
-    width: 100%;
-    opacity: 0.7;
-    text-align: center;
-    font-weight: 700;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.best{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Beast3.jpg);
+
+.rose{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Rose4.jpeg);
     background-position: center top;
     background-size: cover;
 }
-.best::after{
-    content: "Кане Корсо";
-    position: absolute;
-    bottom: 0;
-    background-color: var(--bg-color);
-    width: 100%;
-    opacity: 0.7;
-    text-align: center;
-    font-weight: 700;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.zhana{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/1.jpg);
+
+.Sensacia{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Sensacia1.jpeg);
     background-position: center top;
     background-size: cover;
 }
-.zhana::after{
-    content: "Американский Булли";
-    position: absolute;
-    bottom: 0;
-    background-color: var(--bg-color);
-    width: 100%;
-    opacity: 0.7;
-    text-align: center;
-    font-weight: 700;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.cruch{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/about3.jpeg);
+
+.Canica{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Canica1.jpeg);
     background-position: center top;
     background-size: cover;
 }
-.cruch::after{
-    content: "Американский Булли";
-    position: absolute;
-    bottom: 0;
-    background-color: var(--bg-color);
-    transform: scaleX(10vw);
-    opacity: 0.7;
-    text-align: center;
-    font-weight: 700;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.gana{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/3.jpg);
+
+.Lily{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Lily1.jpeg);
     background-position: center top;
     background-size: cover;
 }
-.gana::after{
-    content: "Американский Булли";
-    position: absolute;
-    bottom: 0;
-    background-color: var(--bg-color);
-    width: 100%;
-    opacity: 0.7;
-    text-align: center;
-    font-weight: 700;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.zina{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/am_bull.jpeg);
+
+.Happiness{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Happiness1.jpeg);
     background-position: center top;
     background-size: cover;
 }
-.zina::after{
-    content: "Американский Булли";
-    position: absolute;
-    bottom: 0;
-    background-color: var(--bg-color);
-    width: 100%;
-    opacity: 0.7;
-    text-align: center;
-    font-weight: 700;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.avi{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/Beast5.jpg);
+
+.Major{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Major2.jpeg);
     background-position: center top;
     background-size: cover;
 }
-.avi::after{
-    content: "Кане Корсо";
-    position: absolute;
-    bottom: 0;
-    background-color: var(--bg-color);
-    width: 100%;
-    opacity: 0.7;
-    text-align: center;
-    font-weight: 700;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.alabama{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/about2.jpg);
+
+.King{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/King2.jpeg);
     background-position: center top;
     background-size: cover;
 }
-.alabama::after{
-    content: "Американский Булли";
-    position: absolute;
-    bottom: 0;
-    background-color: var(--bg-color);
-    width: 100%;
-    opacity: 0.7;
-    text-align: center;
-    font-weight: 700;
-    height: 7vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.Varanich{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Varanich2.jpeg);
+    background-position: center top;
+    background-size: cover;
 }
+
+.Ferre{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Ferre1.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.BiBi{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/BiBi3.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.Ace{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Ace2.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+
+
+.O’Hara{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Hara.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.Chezara{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Chezara2.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.Chempion{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Chempion1.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.joy{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/joy1.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.Qween{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Qween2.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.Zlata{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Zlata2.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.Annabele{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Annabele2.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.Vivat{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Vivat1.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.Simone{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Simone.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.Baby{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Baby2.jpeg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.Aurim{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Aurim.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
 
 
 /* dogs stats */
@@ -671,7 +671,6 @@ body a{
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    height: 100vh;
 }
 
 .dogstats-text{
@@ -685,26 +684,27 @@ body a{
 }
 
 .dogstats-text h3{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--accent-color);
     margin: 1rem 0;
+    margin-bottom: 0.5rem;
 }
 
 .dogstats-text h4{
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     margin: 0;
 }
 
 .dogstats-text hr{
     border: 1px solid var(--accent-color);
     margin: 1rem 0;
-    margin-right: 15%;
 }
 
 .dogstats-text h1{
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 5rem;
     margin: 0;
+    margin-bottom: 3rem;
 }
 
 .dogstats-text p{
@@ -729,6 +729,27 @@ body a{
 .dogstats-text .price{
     font-size: 5rem;
     margin-top: 1.9rem;
+    margin-bottom: 0;
+    color: var(--accent-color);
+}
+
+.doglinks{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.dogstats-text .dogcall{
+    background-color: var(--slight-accent-color);
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+.dogstats-text .dogcall:hover{
     color: var(--accent-color);
 }
 
@@ -739,7 +760,7 @@ body a{
 }
 
 .dogstats-images img{
-    width: 600px;
+    width: 700px;
     height: auto;
 }
 
@@ -806,6 +827,7 @@ body a{
     background-color: var(--slight-accent-color);
     text-align: center;
     margin-top: 0;
+    padding: 0.5rem;
     font-weight: 700;
     font-size: 1rem;
 }
@@ -1009,6 +1031,11 @@ body a{
         padding-left: 0rem;
     }
 
+    .dogstats-text h1{
+        font-size: 4rem !important;
+        margin-bottom: 0;
+    }
+
     .dogstats-images{
         display: flex;
         height: auto;
@@ -1087,7 +1114,7 @@ body a{
         background-color: var(--slight-accent-color);
         padding: 1rem 2rem;
         padding-top: 1rem;
-        margin-top: -5px;
+        margin-top: 5rem;
         margin-bottom: -20px;
         font-weight: 700;
         font-size: 1rem;
