@@ -86,6 +86,7 @@ body a{
 
 .logo{
     position: absolute;
+
 }
 
 
@@ -159,7 +160,10 @@ body a{
 }
 
 .jumbo h1{
-    color: var(--accent-color);
+    background: -webkit-linear-gradient(var(--slight-accent-color),var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 900;
     font-size: 7rem;
     line-height: 170px;
@@ -177,19 +181,18 @@ body a{
 }
 
 .jumbo-img{
-    background-color: var(--bg-color);
+    background-color: var(--accent-color);
+    background: linear-gradient(var(--slight-accent-color),var(--accent-color),var(--slight-accent-color));
     border-radius: 80%;
     flex: 1;
+    margin-top: 1rem;
     display: flex;
-    margin-right: -25rem;
-    margin-top: -5rem;
-
 }
 
 .jumbo-img img{
-    height: 600px;
-    margin-top: 10rem;
-    margin-left: -10rem;
+    height: 50vw;
+    padding: 2rem;
+
 }
 
 .history{
@@ -201,25 +204,28 @@ body a{
 
 .history-text h1{
     font-size: 5rem;
-    color: var(--accent-color);
+    background: -webkit-linear-gradient(var(--slight-accent-color),var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 900;
     margin-top: 0;
 }
 
 .history-text p{
     font-size: 1.5rem;
-    width: 600px;
+    width: 45vw;
 }
 
 .history-img{
     display: flex;
     flex-direction: column;
+    margin-right: 75px;
 }
 
 .history-img img{
-    width: 650px;
+    width: 30vw;
     margin-bottom: 1rem;
-    height: auto;
 }
 
 .youtube-videe{
@@ -237,7 +243,10 @@ body a{
 }
 
 .ourdogs h1{
-    color: var(--accent-color);
+    background: -webkit-linear-gradient(var(--slight-accent-color),var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 900;
     font-size: 5rem;
 }
@@ -245,14 +254,13 @@ body a{
 .ourdogcard{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     margin-right: 75px;
 }
 
 .ourdogcard-text{
     flex: 1;
     position: relative;
-    width: 50%;
     color: #ffffff;
     background-color: var(--bg-color);
 }
@@ -260,7 +268,6 @@ body a{
 .ourdogcardleft{
     flex: 1;
     position: relative;
-    width: 50%;
     color: #ffffff;
     background-color: var(--bg-color);
 }
@@ -279,15 +286,16 @@ body a{
 
 
 .ourdogcardleft h2{
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 900;
     margin-top: 0;
+    margin-bottom: 0;
     padding: 2rem;
     padding-bottom: 0;
 }
 
 .ourdogcardleft p{
-    width: 90%;
+    width: 85%;
     font-size: 1.3rem;
     padding: 2rem;
     padding-top: 0;
@@ -309,21 +317,22 @@ body a{
 
 
 .ourdogcard-text h2{
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 900;
     margin-top: 0;
+    margin-bottom: 0;
     padding: 2rem;
+    padding-bottom: 0;
 }
 
 .ourdogcard-text p{
-    width: 90%;
+    width: 85%;
     font-size: 1.3rem;
     padding: 2rem;
 }
 
 .ourdogcard-img{
     flex: 1;
-    width: 50%;
 }
 
 .ourdogcard-img img{
@@ -458,8 +467,19 @@ body a{
     left: 75px;
     font-weight: 900;
     top: 15px;
-    color: var(--slight-accent-color);
+    background: -webkit-linear-gradient(var(--slight-accent-color),var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-top: 0;
+}
+
+.mobilegrid{
+    display: none;
+}
+
+.desktopgrid{
+    display: flex;
 }
 
 .grid{
@@ -472,7 +492,10 @@ body a{
 .ourdogsclass{
     margin-top: 1rem;
     font-weight: 900;
-    color: var(--accent-color);
+    background: -webkit-linear-gradient(var(--slight-accent-color),var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
@@ -510,6 +533,9 @@ body a{
     font-size: 1.4rem;
     padding: 0 5px;
     font-weight: 900;
+    bottom: 20%;
+    position: absolute;
+
 }
 
 .grid-block:hover{
@@ -519,146 +545,152 @@ body a{
 
 .Ivy{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Ivy\ of\ DSB2.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 
 .BPK{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/BPK3.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .rose{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Rose4.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Sensacia{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Sensacia1.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Canica{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Canica1.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Lily{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Lily1.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Happiness{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Happiness1.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Major{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Major2.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .King{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/King2.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Varanich{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Varanich2.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Ferre{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Ferre1.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .BiBi{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/BiBi3.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Ace{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Ace2.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 
 .O’Hara{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Hara.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Chezara{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Chezara2.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Chempion{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Chempion1.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .joy{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/joy1.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Qween{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Qween2.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Zlata{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Zlata2.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Annabele{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Annabele2.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Vivat{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Vivat1.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Simone{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Simone.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Baby{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Baby2.jpeg);
-    background-position: center top;
+    background-position: center;
     background-size: cover;
 }
 
 .Aurim{
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/Aurim.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bombastic{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/bombastic3.jpeg);
     background-position: center;
     background-size: cover;
 }
@@ -679,13 +711,19 @@ body a{
 
 .dogstats-text .littlered{
     margin-bottom: 0;
-    color: var(--accent-color);
+    background: -webkit-linear-gradient(var(--slight-accent-color),var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 900;
 }
 
 .dogstats-text h3{
     font-size: 1.2rem;
-    color: var(--accent-color);
+    background: -webkit-linear-gradient(var(--slight-accent-color),var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: 1rem 0;
     margin-bottom: 0.5rem;
 }
@@ -771,7 +809,7 @@ body a{
 }
 
 .pups p a{
-    color: var(--slight-accent-color);
+    color: var(--accent-color);
 }
 
 .pupsgallery{
@@ -779,8 +817,12 @@ body a{
     margin-top: 5rem;
 }
 
+.matinggrid{
+    margin-top: 5rem;
+}
+
 .matinggrid .grid-block{
-    width: 30vw;
+    width: 22.5vw;
     z-index: 1;
     height: 86vh;
     display: flex;
@@ -792,12 +834,12 @@ body a{
 }
 
 .matinggrid .grid-block h1{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 900;
 }
 
 .matinggrid .grid-block:hover{
-    width: 35vw;
+    width: 25vw;
     transition: 0.5s all ease-in-out;
 }
 
@@ -861,32 +903,32 @@ body a{
     }
 
     .jumbo{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-top: 2rem;
     }
 
     .jumbo h1{
         font-size: 3rem;
+        margin-top: 3rem;
+        text-align: center;
         line-height: 60px;
     }
 
     .jumbo p{
         width: 95%;
-        font-size: 1.3rem;
-    }
-
-    .jumbo-img{
-        margin-top: 0;
-        margin-right: 0;
+        text-align: center;
+        font-size: 1rem;
     }
 
     .jumbo-img img{
-        height: 300px;
+        height: 65vw;
         margin-top:0;
         margin-left: 0;
     }
 
     .history{
         flex-direction: column;
+        overflow: hidden;
     }
 
     .history-text h1{
@@ -899,14 +941,14 @@ body a{
     }
 
     .history-img img{
-        width: 100%;
+        width: 85vw;
         margin-top: 2rem;
     }
 
     .youtube-videe{
         height: 200px;
         width: 100%;
-        margin-top: 0.2rem;
+        margin-top: 1.4rem;
         margin-bottom: 5rem;
     }
 
@@ -948,9 +990,10 @@ body a{
     }
 
     .ourdogcard-text p{
-        width: 80%;
+        width: 90%;
         font-size: 1rem;
         padding: 1rem;
+        padding-top: 0;
     }
 
     .ourdogcardleft h2{
@@ -1008,18 +1051,39 @@ body a{
     }
 
     .grid{
-        margin-top: 5rem;
         flex-direction: column;
         margin-right: 0;
     }
 
     .grid-block{
-        width: 80vw;
+        width: 85vw;
     }
 
     .grid-block:hover{
-        width: 80vw;
+        width: 85vw;
     }
+
+    .italiangrid .grid-block{
+        width: 85vw;
+    }
+
+    .italiangrid .grid-block:hover{
+        width: 85vw;
+    }
+
+    .Aurim h1{
+        font-size: 1.5rem !important;
+        width: 50vw;
+    }
+
+    .mobilegrid{
+        display: block;
+    }
+
+    .desktopgrid{
+        display: none;
+    }
+
 
     .dogstats{
         height: auto;
@@ -1032,7 +1096,8 @@ body a{
     }
 
     .dogstats-text h1{
-        font-size: 4rem !important;
+        font-size: 3rem !important;
+        width: 100% !important;
         margin-bottom: 0;
     }
 
