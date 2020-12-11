@@ -874,6 +874,61 @@ body a{
     font-size: 1rem;
 }
 
+.grad-grid{
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 75px;
+}
+
+.grad-grid a img{
+    width: 29vw;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.grad-link:hover{
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.moreabout{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.moreabout .close {
+    width: 100%;
+    background-color: var(--slight-accent-color);
+    border: none;
+    color: var(--accent-color);
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.moreaboutcont{
+      background-color: var(--bg-color);
+      padding: 1rem;
+      margin: 5% auto; /* 15% from the top and centered */;
+      width: 55%; /* Could be more or less, depending on screen size */
+}
+  
+.moreabout img{
+      width: 100%;
+      margin-bottom: 1rem;
+}
+  
 
 @media screen and (max-width: 600px) {
     .navbar .menu .dropdown{
