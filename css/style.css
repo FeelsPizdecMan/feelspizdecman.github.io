@@ -882,6 +882,16 @@ body a{
     margin-right: 75px;
 }
 
+.grad-grid a:hover{
+    transform: scale(1.03);
+    z-index: 2;
+    transition: 0.3s all ease-in-out;
+}
+
+.grad-grid a{
+    transition: 0.3s all ease-in-out;
+}
+
 .grad-grid a img{
     width: 29vw;
     margin-bottom: 1rem;
@@ -889,7 +899,7 @@ body a{
 }
 
 .grad-link:hover{
-    opacity: 0.3;
+    opacity: 0.5;
     cursor: pointer;
 }
 
