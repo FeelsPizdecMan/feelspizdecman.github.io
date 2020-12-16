@@ -961,8 +961,89 @@ a:hover {
     margin-bottom: 1rem;
 }
 
+.art-before {
+    margin-top: 4rem;
+}
 
-@media screen and (max-width: 600px) {
+.art-before .art_h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    background: -webkit-linear-gradient(var(--slight-accent-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.art {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.art-shortcuts {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.art-shortcuts h3 {
+    margin-top: 0;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.art-shortcuts a {
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+details {
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, var(--bg-color) 50%, var(--slight-accent-color) 50%);
+    -webkit-transition: background-position 0.4s;
+    -moz-transition: background-position 0.4s;
+    transition: background-position 0.4s;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+details:hover {
+    background-position: 0 100%;
+    cursor: pointer;
+}
+
+details p {
+    padding: 2rem 2rem;
+    background-color: var(--bg-color);
+    margin-bottom: 0;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    font-weight: 900;
+}
+
+summary:focus {
+    background-color: var(--slight-accent-color);
+    outline: none;
+}
+
+
+@media screen and (max-width: 1000px) {
     .navbar .menu .dropdown {
         display: flex;
         flex-direction: column;
@@ -1328,6 +1409,75 @@ a:hover {
         margin-bottom: 1rem;
     }
 
+
+    .art-before {
+        margin-top: 4rem;
+    }
+
+    .art {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+
+    .art-shortcuts {
+        display: none;
+    }
+
+    .art-shortcuts h3 {
+        margin-top: 0;
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+
+    .art-shortcuts a {
+        margin-bottom: 0.5rem;
+        opacity: 0.9;
+        font-weight: 400;
+    }
+
+    .articles {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    details {
+        background-size: 100% 200%;
+        background-image: linear-gradient(to bottom, var(--bg-color) 50%, var(--slight-accent-color) 50%);
+        -webkit-transition: background-position 0.4s;
+        -moz-transition: background-position 0.4s;
+        transition: background-position 0.4s;
+        list-style: none;
+        margin-bottom: 2rem;
+    }
+
+    details:hover {
+        background-position: 0 100%;
+        cursor: pointer;
+    }
+
+    details p {
+        padding: 1rem;
+        background-color: var(--bg-color);
+        margin-bottom: 0;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    summary {
+        font-size: 1.5rem;
+        padding: 1rem 1rem;
+        font-weight: 900;
+    }
+
+    summary:focus {
+        background-color: var(--slight-accent-color);
+        outline: none;
+    }
 
 
 }
