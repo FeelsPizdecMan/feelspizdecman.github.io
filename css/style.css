@@ -9,6 +9,8 @@ html {
     --slight-accent-color: #a58749;
 }
 
+
+
 ::-webkit-scrollbar {
     height: 0px;
     width: 5px;
@@ -335,7 +337,6 @@ body a {
 }
 
 .ourdogcard-text p {
-    width: 85%;
     font-size: 1.3rem;
     padding: 2rem;
 }
@@ -1007,6 +1008,10 @@ a:hover {
     width: 80vw;
 }
 
+.newsinst{
+    margin-right: 35px;
+}
+
 details {
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, var(--bg-color) 50%, var(--slight-accent-color) 50%);
@@ -1483,5 +1488,8 @@ summary:focus {
         outline: none;
     }
 
+    .newsinst{
+        margin-right: 0;
+    }
 
 }
