@@ -228,6 +228,13 @@ body a {
     width: 45vw;
 }
 
+.history-text p b{
+    background: -webkit-linear-gradient(var(--slight-accent-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .history-img {
     display: flex;
     flex-direction: column;
@@ -235,8 +242,7 @@ body a {
 }
 
 .history-img img {
-    width: 30vw;
-    margin-bottom: 1rem;
+    width: 40vw;
 }
 
 .youtube-videe {
