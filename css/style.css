@@ -239,10 +239,12 @@ body a {
     display: flex;
     flex-direction: column;
     margin-right: 75px;
+    margin-top: -1.3rem;
 }
 
 .history-img img {
     width: 40vw;
+    margin-bottom: 1rem;
 }
 
 .youtube-videe {
