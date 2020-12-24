@@ -479,6 +479,50 @@ svg {
     margin-left: 0;
 }
 
+.reviews{
+    margin-top: 5rem;
+}
+
+.reviews h1{
+    background: -webkit-linear-gradient(var(--slight-accent-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+#splidereviews{
+    margin-right: 75px;
+}
+
+.reviews .splide__slide{
+    margin-right: 1rem;
+}
+
+.reviews-bubble{
+
+}
+
+.reviews-bubble-text{
+    background-color: var(--bg-color);
+    padding: 1rem;
+    border-radius: 5px;
+box-shadow: 0px 9px 12px -8px rgba(0,0,0,0.59);
+-webkit-box-shadow: 0px 9px 12px -8px rgba(0,0,0,0.59);
+-moz-box-shadow: 0px 9px 12px -8px rgba(0,0,0,0.59);
+}
+
+
+.reviews-name{
+    background: -webkit-linear-gradient(var(--slight-accent-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    margin-top: 0.5rem;
+}
+
 
 /* Our Dogs */
 
@@ -1120,6 +1164,10 @@ summary:focus {
         font-size: 3rem;
     }
 
+    .reviews h1{
+        font-size: 3rem;
+    }
+
     .history-text p {
         font-size: 1rem;
         width: 90%;
@@ -1181,6 +1229,10 @@ summary:focus {
         padding-top: 0;
     }
 
+    #splidereviews{
+        margin-right: 0;
+    }
+
     .ourdogcardleft h2 {
         font-size: 2rem;
         padding: 1rem;
@@ -1238,6 +1290,10 @@ summary:focus {
     .grid {
         flex-direction: column;
         margin-right: 0;
+    }
+
+    #bulldog{
+        font-size: 2rem !important;
     }
 
     .grid-block {
