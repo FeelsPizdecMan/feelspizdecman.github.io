@@ -14,6 +14,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
 
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_VLIwyDBySOvDm4b915mRH");
+            })();
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="code/jquery.maskedinput.min.js"></script>
+
         <link rel="stylesheet" href="css/splide.min.css">
         <link rel="stylesheet" href="css/splide-default.min.css">
 
@@ -22,17 +32,78 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="menu">
+        <div id="menu" class="menu">
             <span class="iconify" data-icon="bx:bx-menu-alt-left" data-inline="false"></span>
-            <p>Меню</p>
+            <p onclick="$('#sidebar').toggle();">Меню</p>
+        </div>
+
+
+        <div class="sidebar" id="sidebar" style="display: none;">
+            <a class="sidebar__close" onclick="$('#sidebar').toggle();"> <span class="iconify" data-icon="fa:close"
+                    data-inline="false"></span></a>
+
+
+            <h1>Меню</h1>
+
+            <div class="sidebar__links">
+                <a href="#about">О Проекте</a>
+                <a href="#infras">Инфраструктура</a>
+                <a href="#plan">Планировка</a>
+                <a href="#kviz">Подбор Квартиры</a>
+                <a href="#gallery">Галерея</a>
+                <a href="#map">Карта</a>
+                <a href="#calc">Ипотека</a>
+                <a class="sidebar__call" onclick="$('#popup').toggle();">Позвонить</a>
+            </div>
+
+        </div>
+
+        <!--  <div class="popup" id="popup" style="display: none;">
+            <a class="sidebar__close" onclick="$('#popup').toggle();"> <span class="iconify" data-icon="fa:close" data-inline="false"></span></a>
+            <h1>Оставьте Заявку</h1>
+            <p>Введите ваш номер</p>
+            <div class="popup__input">
+                <input type="phone" id="phone" required name="phone" class="tel"placeholder="Ваш Номер">
+                <input class="submit" type="submit" value="Отправить">
+            </div>
+        </div>
+
+    -->
+
+
+        <div class="popup" id="popup" style="display: none;">
+            <div class="popupphonediv">
+                <a class="sidebar__close" onclick="$('#popup').toggle();"> <span class="iconify" data-icon="fa:close"
+                        data-inline="false"></span></a>
+                <form id="regForm" class="gform gform2" method="POST" data-email="lid@sochi.estate"
+                    action="https://script.google.com/macros/s/AKfycbzZVdmJU4UideP0LJbUWSGDsJCnlrCT0UOFRv_x/exec">
+                    <h2>Введите Номер</h2>
+                    <br>
+                    <fieldset class="popupphoneinput">
+                        <input id="phone--phone" type="tel" name="ЖК Олимпийский квартал" minlength="11" maxlength="11"
+                            required placeholder="+7 (999) 999-99-99" />
+                    </fieldset>
+                    <script>
+                        $(document).ready(function () {
+                            $("#phone--phone").mask("+7 (999) 999-99-99");
+                        });
+                    </script>
+                    <br>
+                    <button id="sendbuttont" id="redirect">&nbsp;Отправить</button>
+                    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/masking-input.js" data-autoinit="true">
+                    </script>
+                </form>
+            </div>
         </div>
 
         <div class="jumbo" id="jumbo"
             style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/05.jpg');background-position: center;background-size: cover;background-repeat: no-repeat;background-attachment: fixed;">
             <div class="jumbo__text">
                 <h1>Жилой Комплекс <br> Олимпийский квартал</h1>
-                <button> <span class="iconify" data-icon="fluent:call-add-24-filled" data-inline="false"></span>
-                    Оставить заявку</button>
+                <button onclick="$('#popup').toggle();"> <span class="iconify" data-icon="fluent:call-add-24-filled"
+                        data-inline="false"></span>
+                    <span>Оставить заявку</span>
+                </button>
             </div>
         </div>
 
@@ -75,7 +146,7 @@
         </div>
 
 
-        <div class="about">
+        <div class="about" id="about">
             <div class="about__number">
                 <h1>01. <br> О Проекте</h1>
             </div>
@@ -123,27 +194,8 @@
         </div>
 
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                new Splide('#splide', {
-                    perPage: 3,
-                    perMove: 1,
-                    type: 'loop',
-                    autoplay: true,
-                    pagination: false,
-                    arrows: false,
-                    interval: 0,
-                    trimSpace: true,
-                    speed: 250000,
-                    waitForTransition: false,
-                    pauseOnHover: false,
-                }).mount();
-            });
-        </script>
 
-
-
-        <h2 class="main--h2">
+        <h2 class="main--h2" id="infras">
             02. Инфраструктура
         </h2>
 
@@ -172,24 +224,7 @@
             </div>
 
 
-            <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    new Splide('#splide__infra', {
-                        direction: 'ttb',
-                        height: '81vh',
-                        perPage: 1,
-                        perMove: 1,
-                        type: 'loop',
-                        gap: "5rem",
-                        arrows: false,
-                        autoplay: true,
-                        interval: 3000,
-                        pauseOnFocus: true,
-                        trimSpace: true,
-                        speed: 1500,
-                    }).mount();
-                });
-            </script>
+
 
 
 
@@ -226,7 +261,7 @@
         </div>
 
 
-        <h1 class="main--h2">
+        <h1 class="main--h2" id="plan">
             03. Планировки
         </h1>
 
@@ -236,54 +271,70 @@
                     <img src="img/p1.png" alt="">
                 </div>
                 <div class="plan__item--text">
-                    <h2>1-Комнатные</h2>
-                    <h4>11 вариантов</h4>
+                    <div class="plan__item--text__text">
+                        <h2>1-Комнатные</h2>
+                        <h4>11 вариантов</h4>
+                    </div>
+                    <div class="plan__item--text__button">
+                        <button onclick="$('#popup').toggle();">Получить <br> цены и планировки</button>
+                    </div>
 
-                    <button>Получить <br> цены и планировки</button>
                 </div>
             </div>
+
 
             <div class="plan__item">
                 <div class="plan__item--img">
                     <img src="img/p2.png" alt="">
                 </div>
                 <div class="plan__item--text">
-                    <h2>2-Комнатные</h2>
-                    <h4>25 вариантов</h4>
+                    <div class="plan__item--text__text">
+                        <h2>2-Комнатные</h2>
+                        <h4>25 вариантов</h4>
+                    </div>
+                    <div class="plan__item--text__button">
+                        <button onclick="$('#popup').toggle();">Получить <br> цены и планировки</button>
+                    </div>
 
-                    <button>Получить <br> цены и планировки</button>
                 </div>
             </div>
+
 
             <div class="plan__item">
                 <div class="plan__item--img">
                     <img src="img/p3.png" alt="">
                 </div>
                 <div class="plan__item--text">
-                    <h2>3-Комнатные</h2>
-                    <h4>31 вариантов</h4>
+                    <div class="plan__item--text__text">
+                        <h2>3-Комнатные</h2>
+                        <h4>31 вариантов</h4>
+                    </div>
+                    <div class="plan__item--text__button">
+                        <button onclick="$('#popup').toggle();">Получить <br> цены и планировки</button>
+                    </div>
 
-                    <button>Получить <br> цены и планировки</button>
                 </div>
             </div>
-
 
             <div class="plan__item">
                 <div class="plan__item--img">
                     <img src="img/p4.png" alt="">
                 </div>
                 <div class="plan__item--text">
-                    <h2>4-Комнатные</h2>
-                    <h4>17 вариантов</h4>
+                    <div class="plan__item--text__text">
+                        <h2>4-Комнатные</h2>
+                        <h4>17 вариантов</h4>
+                    </div>
+                    <div class="plan__item--text__button">
+                        <button onclick="$('#popup').toggle();">Получить <br> цены и планировки</button>
+                    </div>
 
-                    <button>Получить <br> цены и планировки</button>
                 </div>
             </div>
 
-
         </div>
 
-        <div class="quiz">
+        <div class="quiz" id="kviz">
             <div class="quiz__number">
                 <h1>04. <br> Подбор Квартиры</h1>
             </div>
@@ -291,20 +342,194 @@
             <div class="quiz__quiz">
                 <h4 style="margin-bottom: 0;">Ответьте на вопросы</h4>
 
-                <div class="quiz__page">
-                    <h4>01. <br> Выберите Этаж</h4>
-                    <button>Низкий</button>
-                    <button>Средний</button>
-                    <button>Высокий</button>
-                </div>
-                <button class="quiz__next">Вперед</button>
-                <button class="quiz__prev">Назад</button>
+
+                <form id="kviz" class="gform" method="POST" data-email="lid@sochi.estate"
+                    action="https://script.google.com/macros/s/AKfycbzZVdmJU4UideP0LJbUWSGDsJCnlrCT0UOFRv_x/exec">
+
+                    <div class="form-elements">
+
+                        <div class="tab">
+                            <h2>Выберите этаж</h2>
+
+                            <fieldset class="pure-group">
+                                <label for="checkboxes--nizkiy" class="container">Низкий
+                                    <input id="checkboxes--nizkiy" type="checkbox"
+                                        name="ЖК Олимпийский квартал - Этажность" value="Низкий">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label for="checkboxes--sredniy" class="container">Средний
+                                    <input id="checkboxes--sredniy" type="checkbox" name="Этажность" value="Средний">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label for="checkboxes--visokiy" class="container">Высокий
+                                    <input id="checkboxes--visokiy" type="checkbox" name="Этажность" value="Высокий">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </fieldset>
+
+
+                        </div>
+
+
+                        <div class="tab">
+                            <h2>Количество комнат</h2>
+
+                            <fieldset class="pure-group">
+                                <label for="checkboxes--studio" class="container">1-Студия
+                                    <input id="checkboxes--studio" type="checkbox" name="Кол-во Комнат"
+                                        value="1-Студия">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label for="checkboxes--twoap" class="container">2-Комнатная
+                                    <input id="checkboxes--twoap" type="checkbox" name="Кол-во Комнат"
+                                        value="2-Комнатная">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label for="checkboxes--threeapp" class="container">3-Комнатная
+                                    <input id="checkboxes--threeapp" type="checkbox" name="Кол-во Комнат"
+                                        value="3-Комнатная">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </fieldset>
+
+                        </div>
+
+                        <div class="tab">
+                            <h2>Наличие Балкона</h2>
+
+                            <fieldset class="pure-group">
+                                <label for="checkboxes--yesbal" class="container">Да
+                                    <input id="checkboxes--yesbal" type="checkbox" name="Балкон" value="Да">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label for="checkboxes--nobal" class="container">Нет
+                                    <input id="checkboxes--nobal" type="checkbox" name="Балкон" value="Нет">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </fieldset>
+
+                        </div>
+                        <div class="tab">
+                            <h2>Предполагаемая сумма</h2>
+
+                            <fieldset class="pure-group">
+                                <label for="checkboxes--sumlow" class="container">до 5 млн
+                                    <input id="checkboxes--sumlow" type="checkbox" name="Сумма" value="до 5 млн">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label for="checkboxes--summid" class="container">5-7 млн
+                                    <input id="checkboxes--summid" type="checkbox" name="Сумма" value="5-7 млн">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label for="checkboxes--sumhigh" class="container">больше 7 млн
+                                    <input id="checkboxes--sumhigh" type="checkbox" name="Сумма" value="больше 7 млн">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </fieldset>
+
+                        </div>
+
+                        <div class="tab">
+                            <h2>Когда Вас записать на просмотр?</h2>
+
+                            <fieldset class="pure-group">
+                                <label for="checkboxes--tommorrow" class="container">Завтра
+                                    <input id="checkboxes--tommorrow" type="checkbox" name="Время Записи"
+                                        value="Завтра">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label for="checkboxes--week" class="container">Через Неделю
+                                    <input id="checkboxes--week" type="checkbox" name="Время Записи"
+                                        value="Через Неделю">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label for="checkboxes--month" class="container">Через Месяц
+                                    <input id="checkboxes--month" type="checkbox" name="Время Записи"
+                                        value="Через Месяц">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label for="checkboxes--idk" class="container">Не Определился
+                                    <input id="checkboxes--idk" type="checkbox" name="Время Записи"
+                                        value="Не определился">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </fieldset>
+
+                        </div>
+
+
+                        <div class="tab">
+                            <h2>Способ Оплаты</h2>
+
+                            <fieldset class="pure-group">
+                                <label for="checkboxes--ipot" class="container">Ипотека
+                                    <input id="checkboxes--ipot" type="checkbox" name="Способ Оплаты" value="Ипотека">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label for="checkboxes--cash" class="container">Наличные
+                                    <input id="checkboxes--cash" type="checkbox" name="Способ Оплаты" value="Наличные">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label for="checkboxes--rasr" class="container">Рассрочка
+                                    <input id="checkboxes--rasr" type="checkbox" name="Способ Оплаты" value="Рассрочка">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </fieldset>
+
+                        </div>
+
+                        <div class="tab">
+                            <h2>Номер Телефона</h2>
+                            <fieldset class="pure-group">
+                                <input id="ddd" type="tel" name="Телефон" minlength="11" maxlength="11" required
+                                    placeholder="+7 (999) 999-99-99" />
+                            </fieldset>
+
+                            <script>
+                                $(document).ready(function () {
+                                    $("#ddd").mask("+7 (999) 999-99-99");
+                                });
+                            </script>
+
+                        </div>
+
+                        <div style="overflow:auto;">
+                            <div class="pnbuttons">
+                                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Назад</button>
+                                <button type="button" id="nextBtn" onclick="nextPrev(1)">Вперед</button>
+                                <button id="sendbutton"" style=" display: none;">&nbsp;Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div style="text-align:center;margin-top:40px; display: none;">
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+
+                    </div>
+
+                </form>
+
+
             </div>
 
         </div>
 
 
-        <h1 class="main--h2">
+        <h1 class="main--h2" id="gallery">
             05. Галерея
         </h1>
 
@@ -367,58 +592,9 @@
         </div>
 
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var secondarySlider = new Splide('#secondary-slider', {
-                    fixedWidth: "30vw",
-                    width: "20vw",
-                    height: "75vh",
-                    gap: "1rem",
-                    direction: "ttb",
-                    perPage: 3,
-                    perMove: 1,
-                    focus: "center",
-                    cover: true,
-                    isNavigation: true,
-                    pagination: false,
-                    type: "loop",
-                    breakpoints: {
-                        '600': {
-                            fixedWidth: 66,
-                            height: 40,
-                        }
-                    },
-                }).mount();
-
-                var mq = window.matchMedia("(max-width: 700px)");
-
-                if (mq.matches) {
-                    var primarySlider = new Splide('#primary-slider', {
-                        type: 'loop',
-                        heightRatio: 1,
-                        pagination: false,
-                        arrows: false,
-                        cover: true,
-                    }); // do not call mount() here.
-                } else {
-                    var primarySlider = new Splide('#primary-slider', {
-                        type: 'loop',
-                        heightRatio: 0.5,
-                        width: "79vw",
-                        height: "75vh",
-                        pagination: false,
-                        arrows: false,
-                        cover: true,
-                    }); // do not call mount() here.    
-                }
 
 
-
-                primarySlider.sync(secondarySlider).mount();
-            });
-        </script>
-
-        <h1 class="main--h2">
+        <h1 class="main--h2" id="map">
             06. Карта
         </h1>
 
@@ -428,7 +604,7 @@
             tabindex="0"></iframe>
 
 
-        <div class="calc">
+        <div class="calc" id="calc">
             <div class="calc__number">
                 <h1>07. <br> Ипотечный Калькулятор</h1>
             </div>
@@ -455,11 +631,21 @@
 
         <script src="code/main.js"></script>
 
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_VLIwyDBySOvDm4b915mRH");
+            })();
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="code/jquery.maskedinput.min.js"></script>
+
         <script src="code/splide.js"></script>
         <script src="code/splide.min.js"></script>
 
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-        <script type="text/javascript" src="js/form-submission-handler.js"></script>
+        <script type="text/javascript" src="code/form-submission-handler.js"></script>
 
         <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
