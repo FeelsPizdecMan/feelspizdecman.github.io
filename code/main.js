@@ -160,8 +160,10 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
     document.getElementById("menu").style.opacity = "0.5";
+    document.getElementById("sidebar__links__desktop").style.opacity = "0.3";
   } else {
     document.getElementById("menu").style.opacity = "1";
+    document.getElementById("sidebar__links__desktop").style.opacity = "1";
   }
 }
 
