@@ -377,7 +377,7 @@ body button:hover {
 }
 
 .gallery {
-    width: 95vw;
+    width: 99vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
