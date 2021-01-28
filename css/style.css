@@ -143,6 +143,10 @@ body button:hover {
     width: 31vw;
 }
 
+#splide{
+    width: 90vw;
+}
+
 .main--h2 {
     font-size: 3rem;
     color: var(--accent-color);
@@ -162,13 +166,17 @@ body button:hover {
 }
 
 #splide__infra {
-    width: 70vw;
+    width: 20vw;
     height: 81vh;
 }
 
 #splide__infra img {
     width: 70vw;
     height: 81vh;
+}
+
+.gallery{
+    width: 80vw;
 }
 
 .infra__text {

@@ -84,7 +84,6 @@ if (mp.matches) {
 
 document.addEventListener('DOMContentLoaded', function () {
   var secondarySlider = new Splide('#secondary-slider', {
-    fixedWidth: "100vw",
     width: "100vw",
     height: "75vh",
     gap: "1rem",
@@ -116,8 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.addEventListener('DOMContentLoaded', function () {
     var secondarySlider = new Splide('#secondary-slider', {
-      fixedWidth: "30vw",
-      width: "20vw",
+      width: "10vw",
       height: "75vh",
       gap: "1rem",
       direction: "ttb",
@@ -139,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var primarySlider = new Splide('#primary-slider', {
       type: 'loop',
       heightRatio: 0.5,
-      width: "79vw",
+      width: "10vw",
       height: "75vh",
       pagination: false,
       arrows: false,
@@ -214,6 +212,7 @@ function nextPrev(n) {
   showTab(currentTab);
 }
 
+
 function validateForm() {
   // This function deals with validation of the form fields
   var x, y, i, valid = true;
@@ -236,35 +235,6 @@ function validateForm() {
   return valid; // return the valid status
 }
 
-
-
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class to the current step:
-  x[n].className += " active";
-}
-
-(function() {
-  function scrollHorizontally(e) {
-      e = window.event || e;
-      var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-      document.getElementById('infra').scrollLeft -= (delta * 20); // Multiplied by 40
-      e.preventDefault();
-  }
-  if (document.getElementById('infra').addEventListener) {
-      // IE9, Chrome, Safari, Opera
-      document.getElementById('infra').addEventListener('mousewheel', scrollHorizontally, false);
-      // Firefox
-      document.getElementById('infra').addEventListener('DOMMouseScroll', scrollHorizontally, false);
-  } else {
-      // IE 6/7/8
-      document.getElementById('infra').attachEvent('onmousewheel', scrollHorizontally);
-  }
-})();
 
 
 
