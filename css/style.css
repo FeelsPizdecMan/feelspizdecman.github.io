@@ -383,6 +383,10 @@ body button:hover {
     justify-content: flex-start;
 }
 
+#primary-slider{
+    margin-right: 1rem;
+}
+
 .menu {
     position: fixed;
     top: 2%;
