@@ -377,10 +377,10 @@ body button:hover {
 }
 
 .gallery {
-    width: 99vw;
+    width: 95vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .menu {
