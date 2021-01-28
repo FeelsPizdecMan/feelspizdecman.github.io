@@ -29,6 +29,7 @@ body button:hover {
 .jumbo {
     padding-top: 40vh;
     padding-bottom: 23vh;
+    width: 95vw;
 }
 
 .jumbo__text {
