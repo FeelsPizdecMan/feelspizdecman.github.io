@@ -6,7 +6,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
 
-    
+
     /*
     --accent-color: #DC965A;
     --bg-color: #242325; 
@@ -29,7 +29,6 @@ body button:hover {
 .jumbo {
     padding-top: 40vh;
     padding-bottom: 23vh;
-    width: 50vw;
 }
 
 .jumbo__text {
@@ -144,10 +143,6 @@ body button:hover {
     width: 31vw;
 }
 
-#splide{
-    width: 90vw;
-}
-
 .main--h2 {
     font-size: 3rem;
     color: var(--accent-color);
@@ -167,17 +162,13 @@ body button:hover {
 }
 
 #splide__infra {
-    width: 20vw;
+    width: 70vw;
     height: 81vh;
 }
 
 #splide__infra img {
     width: 70vw;
     height: 81vh;
-}
-
-.gallery{
-    width: 80vw;
 }
 
 .infra__text {

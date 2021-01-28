@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.addEventListener('DOMContentLoaded', function () {
     var secondarySlider = new Splide('#secondary-slider', {
-      width: "10vw",
+      width: "20vw",
       height: "75vh",
       gap: "1rem",
       direction: "ttb",
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var primarySlider = new Splide('#primary-slider', {
       type: 'loop',
       heightRatio: 0.5,
-      width: "10vw",
+      width: "79vw",
       height: "75vh",
       pagination: false,
       arrows: false,
