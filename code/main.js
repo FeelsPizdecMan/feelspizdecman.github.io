@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var primarySlider = new Splide('#primary-slider', {
       type: 'loop',
       heightRatio: 0.5,
-      width: "70vw",
+      width: "73vw",
       height: "75vh",
       pagination: false,
       arrows: false,
