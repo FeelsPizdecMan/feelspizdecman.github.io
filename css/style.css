@@ -43,6 +43,8 @@ body button:hover {
 
 .jumbo__text button {
     background-color: #ffffff6b;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border: none;
     display: flex;
     align-items: center;
@@ -431,7 +433,9 @@ body button:hover {
 }
 
 .sidebar__links__desktop a{
-    background-color: #2d3047b0;
+    background-color: #ffffff6b;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     font-weight: 900;
     padding: 0.5rem 1rem;
     color: #ffffff;
@@ -491,7 +495,7 @@ body button:hover {
 .calc__number h1 {
     color: var(--accent-color);
     font-size: 5rem;
-    width: 50vw;
+    width: 45vw;
     margin-top: 0;
     font-weight: 900;
 }
@@ -972,7 +976,7 @@ fieldset {
     .about__number h1 {
         color: var(--accent-color);
         font-size: 3rem;
-        width: 100vw;
+        width: 95vw;
         margin-top: 0;
         font-weight: 900;
     }
@@ -1155,7 +1159,7 @@ fieldset {
     .quiz__number h1 {
         color: var(--accent-color);
         font-size: 2rem;
-        width: 100vw;
+        width: 95vw;
         margin-top: 0;
         font-weight: 900;
     }
@@ -1235,7 +1239,7 @@ fieldset {
 
     .calc__number h1 {
         font-size: 2rem;
-        width: 100vw;
+        width: 95vw;
     }
 
     .calc__number::after {
@@ -1245,6 +1249,7 @@ fieldset {
         position: absolute;
         top: -25%;
         left: 0;
+        z-index: -1;
         font-weight: 700;
         opacity: 0.2;
     }
