@@ -471,7 +471,7 @@ body button:hover {
 .footer_button{
     background-color: transparent;
     display: flex;
-    width: 80vw;
+    width: 95vw;
     align-items: center;
     justify-content: center;
     border: none;
