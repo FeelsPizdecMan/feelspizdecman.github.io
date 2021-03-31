@@ -223,7 +223,7 @@ nav {
 .hero {
   padding: 0 5%;
   padding-top: 10vh;
-  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.0)), url('../img/hero1.jpg');
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.0)), url('../img/hero1.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -247,7 +247,7 @@ nav {
 
 
   @media only screen and (max-width: 800px) {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/hero1.jpg');
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../img/hero1.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -473,7 +473,7 @@ nav {
   }
 
   &__hero {
-    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('../img/hero2-large.JPG');
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('../img/hero2-large.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1089,7 +1089,7 @@ nav {
 }
 
 .whoworks {
-  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url('../img/table.jpg');
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5)), url('../img/table.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1098,7 +1098,7 @@ nav {
   padding-bottom: 3rem;
 
   @media only screen and (max-width: 800px) {
-    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 1)), url('../img/table.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 1)), url('../img/table.webp');
   }
 
 
@@ -1153,15 +1153,15 @@ nav {
       }
 
       .leha {
-        background-image: url(../img/leha.jpg);
+        background-image: url(../img/leha.webp);
       }
 
       .andrei {
-        background-image: url(../img/andrei.jpg);
+        background-image: url(../img/andrei.webp);
       }
 
       .danil {
-        background-image: url(../img/danil.jpg);
+        background-image: url(../img/danil.webp);
       }
 
       &-text {
@@ -1256,7 +1256,7 @@ nav {
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)), url('../img/house.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1)), url('../img/house.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

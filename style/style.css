@@ -253,8 +253,8 @@ nav .right-col .phone svg {
 .hero {
   padding: 0 5%;
   padding-top: 10vh;
-  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(rgba(255, 255, 255, 0.8)), color-stop(rgba(255, 255, 255, 0.6)), color-stop(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0))), url("../img/hero1.jpg");
-  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)), url("../img/hero1.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(rgba(255, 255, 255, 0.8)), color-stop(rgba(255, 255, 255, 0.6)), color-stop(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0))), url("../img/hero1.webp");
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)), url("../img/hero1.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -281,8 +281,8 @@ nav .right-col .phone svg {
 
 @media only screen and (max-width: 800px) {
   .hero {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url("../img/hero1.jpg");
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/hero1.jpg");
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url("../img/hero1.webp");
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../img/hero1.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -577,8 +577,8 @@ nav .right-col .phone svg {
 }
 
 .about__hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url("../img/hero2-large.JPG");
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/hero2-large.JPG");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))), url("../img/hero2-large.webp");
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/hero2-large.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1291,8 +1291,8 @@ nav .right-col .phone svg {
 }
 
 .whoworks {
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.5))), url("../img/table.jpg");
-  background: linear-gradient(white, rgba(255, 255, 255, 0.5)), url("../img/table.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0.5))), url("../img/table.webp");
+  background: linear-gradient(white, rgba(255, 255, 255, 0.5)), url("../img/table.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1303,8 +1303,8 @@ nav .right-col .phone svg {
 
 @media only screen and (max-width: 800px) {
   .whoworks {
-    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(rgba(255, 255, 255, 0.1)), color-stop(rgba(255, 255, 255, 0.1)), to(white)), url("../img/table.jpg");
-    background: linear-gradient(white, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1), white), url("../img/table.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(rgba(255, 255, 255, 0.1)), color-stop(rgba(255, 255, 255, 0.1)), to(white)), url("../img/table.webp");
+    background: linear-gradient(white, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1), white), url("../img/table.webp");
   }
 }
 
@@ -1376,15 +1376,15 @@ nav .right-col .phone svg {
 }
 
 .whoworks .card-row .card .leha {
-  background-image: url(../img/leha.jpg);
+  background-image: url(../img/leha.webp);
 }
 
 .whoworks .card-row .card .andrei {
-  background-image: url(../img/andrei.jpg);
+  background-image: url(../img/andrei.webp);
 }
 
 .whoworks .card-row .card .danil {
-  background-image: url(../img/danil.jpg);
+  background-image: url(../img/danil.webp);
 }
 
 .whoworks .card-row .card-text-top {
@@ -1501,8 +1501,8 @@ nav .right-col .phone svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(rgba(255, 255, 255, 0.2)), to(white)), url("../img/house.jpg");
-  background: linear-gradient(white, rgba(255, 255, 255, 0.2), white), url("../img/house.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(rgba(255, 255, 255, 0.2)), to(white)), url("../img/house.webp");
+  background: linear-gradient(white, rgba(255, 255, 255, 0.2), white), url("../img/house.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
